@@ -1,0 +1,119 @@
+let log_in = document.querySelector('.top-navbar__account-log-in');
+let register = document.querySelector('.top-navbar__account-register');
+
+let unaccount = document.querySelector('.top-navbar__account');
+
+let overlay = document.createElement('div');
+overlay.className = "overlay";
+
+let body = document.querySelector('body');
+
+let loginForm = document.createElement('div');
+loginForm.className = 'login-form';
+
+
+
+
+window.addEventListener('click',(e)=>{
+  e.preventDefault();
+  if(e.target == register){
+    body.appendChild(overlay);
+    loginForm.innerHTML = `
+    <form>
+    <div class="form-group">
+      <label for="email-register">Email address</label>
+      <input type="email" class="form-control" id="email-register" aria-describedby="emailHelp">
+      <small>Email phải đúng theo định dạng của email</small>
+    </div>
+    <div class="form-group">
+      <label for="username-register">Username</label>
+      <input type="text" class="form-control" id="username-register" aria-describedby="emailHelp">
+      <small>Hãy nghĩ 1 cái username thật hay nhé :), chú ý rằng chiều dài tối thiểu là 6 và tối đa là 32 kí tự</small>
+    </div>
+    <div class="form-group">
+      <label for="password-register">Password</label>
+      <input type="password" class="form-control" id="password-register">
+      <small>Mật khẩu phải có chiều dài tối thiểu là 6 và tối đa là 32 kí tự</small>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password-register">Confirm Password</label>
+      <input type="password" class="form-control" id="confirm-password-register">
+    </div>
+    <p class = "invalid-account"></p>
+    <button type="submit" class="btn btn-primary btn-login second">Sign up</button>
+    </form>`
+    overlay.appendChild(loginForm);
+  }
+
+  if(e.target == log_in) {
+    body.appendChild(overlay);
+    loginForm.innerHTML = `
+    <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="password-login">
+    </div>
+    <p class = "invalid-account"></p>
+    <button type="submit" class="btn btn-primary btn-login first">Sign in</button>
+    </form>`
+    overlay.appendChild(loginForm);
+  }
+
+  if(e.target.className=='overlay') e.target.remove();  
+
+  let buttonSubmit2 = document.querySelector('.btn-login.second');
+  let p = document.querySelector('.invalid-account');
+  if(e.target == buttonSubmit2) {
+    let emailRegisterRegex = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm;
+    let emailRegister = document.getElementById('email-register').value;
+    let passwordRegex = /\w{6,32}/;
+    let username = document.getElementById('username-register').value; 
+    let passwordRegister = document.getElementById('password-register').value;
+    let confirmPassword = document.getElementById('confirm-password-register').value;
+    if(emailRegisterRegex.test(emailRegister) && passwordRegex.test(passwordRegister) && passwordRegex.test(username) && passwordRegister == confirmPassword){
+      alert("REGISTER SUCCESSFUL");
+      let account = new User(
+        username,
+        emailRegister,
+        passwordRegister
+      );
+      user.push(account);
+      console.log(user);
+      overlay.remove();
+    } else {
+      p.innerHTML = 'Invalid account';
+    }
+  }
+
+  let buttonSubmit1 = document.querySelector('.btn-login.first');
+  if(e.target == buttonSubmit1){
+    let emailLogin = document.getElementById('email-login').value;
+    let passwordLogin = document.getElementById('password-login').value;
+    let p = document.querySelector('.invalid-account');
+    let status = 0;
+    for(let i = 0; i < user.length; i++){
+      if(user[i].email == emailLogin && user[i].password == passwordLogin){
+        status = 1;
+        overlay.remove();
+        unaccount.removeChild(log_in);
+        unaccount.removeChild(register);
+        let accountLogo = document.createElement('div');
+        accountLogo.className = 'account-logo';
+        let accountName = document.createElement('div');
+        accountName.className = 'account-name';
+        accountName.innerHTML = `${user[i].username}`;
+        unaccount.appendChild(accountName);
+        unaccount.appendChild(accountLogo);
+      }
+    }
+    if(status == 0) {
+      p.innerHTML = 'Tài khoản và mật khẩu không chính xác. Mời bạn nhập lại';
+    }
+  }
+
+});
+
