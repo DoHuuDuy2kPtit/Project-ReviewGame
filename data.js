@@ -63,3 +63,5 @@ const crossFireZero = new Game(
 );
 
 const games = [gordianQuest, lol, valorant, crossFireZero];
+
+const user = [];

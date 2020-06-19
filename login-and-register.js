@@ -12,8 +12,6 @@ let loginForm = document.createElement('div');
 loginForm.className = 'login-form';
 
 
-
-
 window.addEventListener('click',(e)=>{
   e.preventDefault();
   if(e.target == register){
@@ -21,7 +19,7 @@ window.addEventListener('click',(e)=>{
     loginForm.innerHTML = `
     <form>
     <div class="form-group">
-      <label for="email-register">Email address</label>
+      <label for="email-register">Email</label>
       <input type="email" class="form-control" id="email-register" aria-describedby="emailHelp">
       <small>Email phải đúng theo định dạng của email</small>
     </div>
@@ -31,16 +29,16 @@ window.addEventListener('click',(e)=>{
       <small>Hãy nghĩ 1 cái username thật hay nhé :), chú ý rằng chiều dài tối thiểu là 6 và tối đa là 32 kí tự</small>
     </div>
     <div class="form-group">
-      <label for="password-register">Password</label>
+      <label for="password-register">Mật khẩu</label>
       <input type="password" class="form-control" id="password-register">
       <small>Mật khẩu phải có chiều dài tối thiểu là 6 và tối đa là 32 kí tự</small>
     </div>
     <div class="form-group">
-      <label for="confirm-password-register">Confirm Password</label>
+      <label for="confirm-password-register">Xác nhận mật khẩu</label>
       <input type="password" class="form-control" id="confirm-password-register">
     </div>
     <p class = "invalid-account"></p>
-    <button type="submit" class="btn btn-primary btn-login second">Sign up</button>
+    <button type="submit" class="btn btn-primary btn-login second">Đăng kí</button>
     </form>`
     overlay.appendChild(loginForm);
   }
@@ -50,15 +48,15 @@ window.addEventListener('click',(e)=>{
     loginForm.innerHTML = `
     <form>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
+      <label for="exampleInputEmail1">Email</label>
       <input type="email" class="form-control" id="email-login" aria-describedby="emailHelp">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <label for="exampleInputPassword1">Mật khẩu</label>
       <input type="password" class="form-control" id="password-login">
     </div>
     <p class = "invalid-account"></p>
-    <button type="submit" class="btn btn-primary btn-login first">Sign in</button>
+    <button type="submit" class="btn btn-primary btn-login first">Đăng nhập</button>
     </form>`
     overlay.appendChild(loginForm);
   }
@@ -74,18 +72,21 @@ window.addEventListener('click',(e)=>{
     let username = document.getElementById('username-register').value; 
     let passwordRegister = document.getElementById('password-register').value;
     let confirmPassword = document.getElementById('confirm-password-register').value;
-    if(emailRegisterRegex.test(emailRegister) && passwordRegex.test(passwordRegister) && passwordRegex.test(username) && passwordRegister == confirmPassword){
-      alert("REGISTER SUCCESSFUL");
-      let account = new User(
-        username,
-        emailRegister,
-        passwordRegister
-      );
+    let account = new User(
+      username,
+      emailRegister,
+      passwordRegister
+    );
+    console.log(checkAccount(user,account));
+    if(emailRegisterRegex.test(emailRegister) && passwordRegex.test(passwordRegister) 
+      && passwordRegex.test(username) && passwordRegister == confirmPassword 
+      && checkAccount(user,account)){
+      alert("Đăng kí thành công !!");
       user.push(account);
       console.log(user);
       overlay.remove();
     } else {
-      p.innerHTML = 'Invalid account';
+      p.innerHTML = 'Tài khoản không hợp lệ hoặc địa chỉ email đã tồn tại';
     }
   }
 
@@ -114,6 +115,13 @@ window.addEventListener('click',(e)=>{
       p.innerHTML = 'Tài khoản và mật khẩu không chính xác. Mời bạn nhập lại';
     }
   }
-
 });
 
+function checkAccount(arr,obj){
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].email == obj.email){
+      return false;
+    }
+  }
+  return true;
+}
