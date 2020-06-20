@@ -62,6 +62,9 @@ const crossFireZero = new Game(
   "Crossfire Zero sẽ khiến những người theo Đột Kích từ những ngày đầu như Mọt cảm thấy thật thân quen như thời mới bước vào Beta của Đột Kích 12 năm trước."
 );
 
+const bezt = new Comment("chung", "da bezt", 0);
+crossFireZero.feedback.push(bezt);
+
 const games = [gordianQuest, lol, valorant, crossFireZero];
 
 const user = [];
