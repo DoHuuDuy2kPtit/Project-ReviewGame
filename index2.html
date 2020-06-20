@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1d8617e925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./base.css" />
+  </head>
+  <script src="./format-letter.js"></script>
+  <body>
+    <!-- Nav-bar -->
+    <header>
+      <div class="container">
+        <div class="top-nav">
+          <a class="top-navbar-brand" href="#"> </a>
+          <div class="top-navbar__account">
+            <a href="#" class="top-navbar__account-register">Đăng kí</a>
+            <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: var(--primary-color); height: 72px;"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAME ONLINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PC/CONSOLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ESPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAMES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TIN TỨC</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  XẾP HẠNG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">TOP 5 Game hay nhất</a>
+                  <a class="dropdown-item" href="#">TOP 5 Game tệ nhất</a>
+                  <a class="dropdown-item" href="#">TOP 5 Game mới nhất</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Tìm kiếm ..."
+                hidefocus="true"
+                style="outline: none;"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div style="background-color: black; width: 100%; height: 40px;">
+        <div class="container">
+          <div class="menu__social">
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
+    <!-- Main content -->
+    <div class="top-banner">
+      <div class="container">
+        <div class="top-banner__image"></div>
+        <div class="top-banner__review">
+          <a href class="top-banner__review-type">Game online</a>
+          <div class="big-title">
+            <h1 class="font-weight-bold">
+              Đánh giá CrossfireZero - Một diện mạo mới của Đột Kích
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="seperate" style="margin: 30px;"></div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="wrapper">
+            <div class="detail">
+              <p class="font-weight-bold" style="font-size: 20px;">
+                Crossfire Zero sẽ khiến những người theo Đột Kích từ những ngày
+                đầu như Mọt cảm thấy thật thân quen như thời mới bước vào Beta
+                của Đột Kích 12 năm trước.
+              </p>
+              <p>
+                Crossfire Zero mở cửa Open Beta tại Đông Nam Á chỉ vài ngày sau
+                khi
+                <a href="#" class="text-danger">
+                  Đột Kích tại Việt Nam tuyên bố đóng cửa
+                </a>
+                rồi sau đó lại chuyển về tay của một NPH cùng chung công ty mẹ
+                là VTC Online, nhiều game thủ cho rằng điều này không hẳn là
+                trùng hợp. Mặc dù đang chính thức phát hành bởi Stove (thuộc
+                Smilegate) trong khu vực Đông Nam Á chung nhưng Crossfire Zero
+                đã được xác nhận là cũng về tay VTC Online nốt, bằng chứng là
+                logo của NPH này xuất hiện ở chân trang của trang chủ Crossfire
+                Zero Đông Nam Á.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/danh-gia-crossfire-zero-mot-dien-mao-moi-cua-dot-kich-1.jpg"
+                alt="anh minh hoa so 1"
+              />
+              <p>
+                Gác chuyện này sang một bên, Crossfire Zero của Stove đang mở
+                cửa cho dân chúng vào thử mới là cái đáng quan tâm đang diễn ra
+                hiện nay và Mọt đã thử đăng ký và trải nghiệm như một người mới
+                sau bao năm rời xa Đột Kích. Kết quả thì thật là khó tả, thôi
+                thì cứ nêu ra dần vậy.
+              </p>
+              <p>
+                Tất nhiên, ai cũng biết cốt truyện của Đột Kích khá nhạt nhòa và
+                hầu như chỉ là một bối cảnh làm nền cho trò chơi. Nó chỉ nhắc về
+                một cuộc chiến tương lai khi thế giới bị chia làm 2 thế lực quân
+                sự đối đầu nhau là Black List và Global Risk. Hai phe này luôn
+                có những chiến dịch quân sự nhằm vào nhau và người chơi sẽ chiến
+                đấu trong màu áo của 1 trong 2 phe. Các nhân vật cơ bản như
+                OMOH, SAS, SWAT đều có trang phục cho cả 2 phe trong khi đó
+                nhiều nhân vật “cao cấp” khác sẽ tùy vào câu truyện riêng mà
+                xuất hiện dần về sau.
+              </p>
+              <div class="small-title font-weight-bold">
+                Chế độ cổ điển – Gương mặt thân quen
+              </div>
+              <p>
+                Chế độ bắn cổ điển của Crossfire Zero tái hiện lại đúng gameplay
+                quen thuộc của
+                <a href="#" class="text-danger"> Đột Kích </a> với một số màn
+                chơi khởi đầu như Kim Tự Tháp, Tàu Chở Hàng… kèm theo đó là các
+                chế độ bắn quen thuộc không kém như Deathmatch, Zombie nhưng
+                dưới những tên gọi khác có vẻ khá lạ lẫm do dịch từ Crossfire
+                Zero bản gốc.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/danh-gia-crossfire-zero-mot-dien-mao-moi-cua-dot-kich-2.jpg"
+                alt="anh minh hoa so 2"
+              />
+              <p>
+                Nhìn chung ở chế độ bắn này, kho vũ khí và các skin súng cũng
+                hoạt động giống như trước. Người chơi sẽ tham gia các trận đấu
+                tích điểm hoặc tiền game rồi dùng nó mua các vũ khí cơ bản vĩnh
+                viễn. Các khẩu súng về sau sẽ cần lên cấp để mở dần. Phần skin
+                súng sẽ được bán theo ngày và lắp vào khẩu cơ bản mà người chơi
+                đang sở hữu để sử dụng.
+              </p>
+              <p>
+                Nhìn chung đây là những điều cơ bản nhất của game Đột Kích, tuy
+                nhiên hơi đáng tiếc là do vừa mới mở cửa thử nghiệm nên kho hàng
+                của Crossfire Zero khá là nghèo nàn. Chỉ có một số loại súng cơ
+                bản và một ít skin súng chứ không đồ sộ như Đột Kích hiện tại.
+                Các mẫu nhân vật và các map đấu cũng vậy, hầu như chỉ vừa đủ để
+                trải nghiệm cho vui chứ chưa thực sự nhiều.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/danh-gia-crossfire-zero-mot-dien-mao-moi-cua-dot-kich-3.jpg"
+                alt="anh minh hoa so 3"
+              />
+              <p>
+                Mặc dù vậy, số lượng người đổ vào chơi cũng khá đông tạo nên bầu
+                không khí rất nhộn nhịp trong chế độ chơi này. Không quá khó để
+                tìm được phòng chơi và các phòng hầu hết đều kín người. Mọt chơi
+                thỉnh thoảng bị lag khung hình không rõ là do số người chơi đông
+                hay do lag đường truyền, lag chết vài mạng thì cũng hơi khó chịu
+                đấy!
+              </p>
+              <div class="small-title font-weight-bold">
+                Chế độ battle royale – Đẹp nhưng… hơi ế
+              </div>
+              <p>
+                Chế độ battle royale được thiết kế song song với chế độ cổ điển,
+                nghĩa là khi vào game bạn sẽ lựa chọn vào chơi 1 trong 2 phần
+                này. Trong mỗi phần có nút chuyển nhanh sang bên kia tạo cảm
+                giác tiện lợi. Kho đồ của chế độ này tách biệt với phần chơi cổ
+                điển đơn giản vì sự khác biệt về cách chơi khiến kho trang bị
+                cũng phải khác nhau.
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/g-tXY0jjbuk"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <p>
+                Phần battle royale của Crossfire Zero hiện có 3 nhân vật đại
+                diện cho 3 vai trò trong trận đấu bao gồm Boris đóng vai trò
+                tanker với các kỹ năng tấn công – phòng thủ, Chase đóng vai trò
+                hỗ trợ với tốc độ và sự gọn nhẹ, Olga với vai trò healer có khả
+                năng hồi máu.
+              </p>
+              <p>
+                Chế độ <a href="#" class="text-danger"> Battle Royale </a> của
+                Crossfire Zero có hơi hướng tương lai tương tự như
+                <a href="#" class="text-danger"> Apex Legends </a> với các công
+                trình máy móc hiện đại, các công nghệ tàng hình, quét mục tiêu
+                và cuối cùng là khả năng hồi sinh đồng đội đã bị hạ gục. Người
+                chơi sẽ được lựa chọn 1 trong 3 nhân vật này khi bước vào phòng
+                chờ trận đấu và sẽ được thả từ máy bay xuống hòn đảo như các
+                game cùng dạng Battle Royale khác.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/danh-gia-crossfire-zero-mot-dien-mao-moi-cua-dot-kich-4.jpg"
+                alt="anh minh hoa so 4"
+              />
+              <p>
+                Tuy vậy, có một trở ngại khá khó hiểu là dường như phần này có
+                khá ít người chơi. Mọt phải chờ rất lâu mới có được một trận và
+                sau khi thua chóng vánh quay ra thì hầu như chờ suốt 5 phút
+                không ghép được trận nào nữa.
+              </p>
+              <div class="small-title font-weight-bold">
+                Đồ họa – Âm thanh khá tốt
+              </div>
+              <p>
+                Điểm đắc nhất của Crossfire Zero chính là sự nâng cấp đồ họa.
+                Vẫn giữ phong cách quen thuộc của Đột Kích ngày xưa nhưng đồ họa
+                của Crossfire Zero được nâng lên khá đáng kể. Bạn sẽ nhận ra mọi
+                thứ mịn màng hơn và sắc sảo hơn, ít răng cưa hơn. Đặc biệt là
+                các mô hình nhân vật trong phòng chờ có các hiệu ứng ánh sáng đổ
+                bóng khá bắt mắt. Các nhân vật ở phần chơi Battle Royale lại
+                càng đẹp hơn khi các chi tiết tinh xảo trên trang phục của nhân
+                vật kết hợp với vân bề mặt sắc nét và đổ bóng ánh sáng trông rất
+                chất lượng.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/danh-gia-crossfire-zero-mot-dien-mao-moi-cua-dot-kich-5.jpg"
+                alt="anh minh hoa so 5"
+              />
+              <p>
+                Về phần âm nhạc, chúng ta có nguyên xi những âm thanh quen thuộc
+                từ Đột Kích bê sang như nhạc nền, các âm thanh ném lựu đạn, âm
+                thanh mở đầu trận, tiếng súng, tiếng lựu đạn… không lẫn vào đâu
+                được. Có nhắm mắt nghe cũng biết là “linh hồn của Đột Kích”.
+              </p>
+              <div class="small-title font-weight-bold">Kết</div>
+              <p>
+                Nhìn chung Crossfire Zero là một kẻ thay thế tiềm năng cho Đột
+                Kích cũ với các nâng cấp về đồ họa và chế độ Battle Royale mới
+                mẻ. Tuy vậy do game mới mở nên kho vật phẩm còn quá ít, số map
+                quá hạn chế có thể sẽ làm các fan đang quen với cái kho đồ sộ
+                của Đột Kích cũ cảm thấy chán vì quá tù túng trong lựa chọn. Nếu
+                sau giai đoạn thử nghiệm này, Stove cho bơm item vào thật nhiều
+                thì có thể sẽ lôi kéo được nhiều game thủ Đột Kích sang
+                Crossfire Zero dễ dàng.
+              </p>
+              <p class="font-weight-bold">Ưu điểm:</p>
+              <ul>
+                <li>Đồ họa được nâng cấp, mô hình nhân vật đẹp</li>
+                <li>Chế độ Battle Royale mới</li>
+                <li>Âm thanh quen thuộc</li>
+                <li>Bộ cài nhẹ chỉ có 2GB</li>
+                <li>Client có hỗ trợ tiếng Việt</li>
+              </ul>
+              <p class="font-weight-bold">Nhược điểm:</p>
+              <ul>
+                <li>Item và map còn khá ít</li>
+                <li>Thỉnh thoảng bị lag khung hình khi đang đọ súng</li>
+              </ul>
+              <p>Fanpage Crossfire Zero Việt Nam:</p>
+              <a
+                class="text-danger"
+                href="https://www.facebook.com/groups/CFZEROVIETNAM/"
+              >
+                https://www.facebook.com/groups/CFZEROVIETNAM/
+              </a>
+            </div>
+            <div class="author-box">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4 class="author-name">
+                  Tác giả:
+                  <span>Khỉ nâu</span>
+                </h4>
+                <p class="author-description">
+                  Người hiếm hoi trong team cày 3 tiếng bắn súng FPS mà không
+                  than chóng mặt (^_^)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments-area">
+            <h3 class="comments-title"></h3>
+            <hr />
+            <ul class="comment-list"></ul>
+          </div>
+          <div class="comment-area">
+            <h3 class="comments-title">Bình luận</h3>
+            <hr />
+            <form class="comment-respond">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Bình luận"
+              ></textarea>
+              <button type="submit" class="btn btn-primary btn-comment">
+                Đăng tải
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="news-title">
+            <div class="title">
+              <h1 class="heading">
+                <a href="#">TRÀ ĐÁ GAME THỦ</a>
+              </h1>
+              <hr />
+            </div>
+            <ul class="list-news">
+              <li class="big-item item-news">
+                <a
+                  href="#"
+                  style="
+                    background-image: url('https://motgame.vn/wp-content/uploads/2020/06/Kujimatowa/game-thu-toxic-368x207.jpg');
+                  "
+                ></a>
+                <div>
+                  <span class="date-news">15/06/2020</span>
+                  <h4>
+                    <a href="#"
+                      >Khi mạt sát đồng đội trở thành tâm bệnh khó chữa của game
+                      thủ toxic</a
+                    >
+                  </h4>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Valorant và cuộc di dân Exodus của game thủ CSGO bán
+                        chuyên
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/valorant-va-cuoc-di-dan-exodus-cua-game-thu-csgo-ban-chuyen-ava-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Cuộc cách mạng của Mobile Esports sẽ thay đổi tương lai
+                        game di động?
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/06/Ronin/cuoc-cach-mang-cua-mobile-esports-se-thay-doi-tuong-lai-hay-tu-giet-chinh-ban-than-thump-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Epic Games và câu chuyện “tiếp tay” cho dân chơi crack
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/vuhoang/gta-v2-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Tại sao game bắn súng ngày càng được ưa thích trên điện
+                        thoại?
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/Jarvis/game-ban-sung-dang-tro-nen-duoc-ua-chuong-hon-tren-mobile-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Legend of Zelda và những điều thấy hơi ”lạ” khi đã
+                        trưởng thành – P.3
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/Kujimatowa/zelda-va-nhung-thu-ky-la-3-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Ghost of Tsushima sẽ thất bại vì kiểu chơi “bắt chước”
+                        Assassin's Creed?
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/vuhoang/ghost-of-tsushima-2-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="logo-wrap">
+              <a href="#" class="footer__logo">
+                <img
+                  width="150"
+                  height="150"
+                  src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png"
+                  alt="ft-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ONLINE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    PC/CONSOLE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME MOBILE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ESPORTS
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    TIN TỨC
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list policy">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Giới thiệu
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Chính sách bảo mật
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Điều khoản sử dụng
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Liên hệ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__social">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game-name">Crossfire Zero</div>
+    </footer>
+    <script src="./data.js"></script>
+    <!-- <script src="./render-main-page.js"></script> -->
+    <script src="./login-and-register.js"></script>
+    <script src="./render-comment.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
