@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1d8617e925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <script src="./format-letter.js"></script>
+  <body>
+    <!-- Nav-bar -->
+    <header>
+      <div class="container">
+        <div class="top-nav">
+          <a class="top-navbar-brand" href="#"> </a>
+          <div class="top-navbar__account">
+            <a href="#" class="top-navbar__account-register">Đăng kí</a>
+            <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: var(--primary-color); height: 72px;"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAME ONLINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PC/CONSOLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ESPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAMES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TIN TỨC</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  XẾP HẠNG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">TOP 5 Game hay nhất</a>
+                  <a class="dropdown-item" href="#">TOP 5 Game tệ nhất</a>
+                  <a class="dropdown-item" href="#">TOP 5 Game mới nhất</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Tìm kiếm ..."
+                hidefocus="true"
+                style="outline: none;"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div style="background-color: black; width: 100%; height: 40px;">
+        <div class="container">
+          <div class="menu__social">
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
+    <!-- Main content -->
+    <div class="top-banner">
+      <div class="container">
+        <img
+          class="top-banner__image"
+          src="https://motgame.vn/wp-content/uploads/2019/10/Kujimatowa/lmht-toc-chien-cv.jpg"
+        />
+        <div class="top-banner__review">
+          <a href class="top-banner__review-type">Game Mobile</a>
+          <div class="big-title">
+            <h1 class="font-weight-bold">
+              Đánh giá LMHT: Tốc Chiến Alpha Test – Tiêu chuẩn mới cho MOBA trên
+              di động
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="seperate" style="margin: 30px;"></div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="wrapper">
+            <div class="detail">
+              <p class="font-weight-bold" style="font-size: 20px;">
+                Dù mới là giai đoạn thử nghiệm giới hạn, có thể khẳng định Tốc
+                Chiến sẽ mở ra những tiềm năng vô hạn cho thị trường MOBA trên
+                di động.
+              </p>
+              <p>
+                Cuối tháng trước, Riot đã chính thức giới thiệu rộng rãi
+                gameplay của
+                <a href="#" class="text-danger">
+                  LMHT: Tốc Chiến
+                </a>
+                (gọi tắt là Tốc Chiến) đến với hàng triệu người hâm mộ trên toàn
+                thế giới. Ngoài ra, cha đẻ của tựa game MOBA nổi tiếng này còn
+                hé lộ về một đợt thử nghiệm giới hạn diễn ra duy nhất tại 2 quốc
+                gia là Brazil và Philippines. Tuy đợt thử nghiệm này có quy mô
+                khá khiêm tốn, nhưng nó lại thu hút được sự quan tâm rất lớn tới
+                từ cộng đồng người yêu LMHT trên khắp thế giới.
+              </p>
+              <img
+                src="../images/lol.jpg"
+                width="560"
+                height="310"
+                alt="anh minh hoa so 1"
+              />
+              <p>
+                Tuy Mọt Game không có hộ khẩu ở Brazil hay Phillipines, thế
+                nhưng có lẽ do nhân phẩm của bản thân cũng thuộc vào dạng khá
+                nên đã nhận được thư mời tham gia thử nghiệm của Riot. Dù đã xem
+                đi xem lại không biết bao nhiêu lần đoạn video giới thiệu
+                gameplay của Riot, thế nhưng khi được cầm trên tay và trải
+                nghiệm LMHT: Tốc Chiến, Mọt tui vẫn không thể kìm hãm lại sự vui
+                sướng bởi chất lượng của tựa game đã thổi bay mọi nghi hoặc vẫn
+                quanh quẩn trong đầu Mọt từ trước tới nay.
+              </p>
+              <div class="small-title font-weight-bold">
+                Trải nghiệm tổng quan
+              </div>
+              <p>
+                Do đợt thử nghiệm này chỉ giới hạn tại 2 quốc gia là Brazil và
+                Philippines, Mọt tui đã phải dùng phần mềm thứ 3 để có thể “trèo
+                tường” sang tận Nam Mỹ và đến với Tốc Chiến. Dung lượng tổng của
+                tựa game xấp xỉ 3.7GB, một con số không nhỏ nhưng cũng không quá
+                lớn đối với tiêu chuẩn điện thoại ngày nay. Chung quy lại thì từ
+                bước fake IP sang Brazil cho tới nạp dữ liệu cho game thì gần
+                như Mọt không gặp phải khó khăn gì.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-4.jpg"
+                alt="anh minh hoa so 2"
+              />
+              <p>
+                Trước khi chuyển đến giao diện chính của trò chơi, bạn sẽ có
+                công đoạn đặt tên cho nhân vật, sau đó game cho bạn 2 lựa chọn:
+                Một là chưa từng chơi qua LMHT, hai là đã từng có kinh nghiệm
+                chơi tựa game trên PC rồi. Với lựa chọn thứ 2, Mọt tui được bỏ
+                qua luôn phần hướng dẫn cơ bản và được đôn thẳng lên cấp độ 3,
+                kèm theo đó là 3 tướng miễn phí được Riot tặng khi hoàn thành
+                bài hướng dẫn.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-1.jpg "
+                alt="anh minh hoa so 3"
+              />
+              <p>
+                Có thể nói giao diện tổng của Tốc Chiến được hoàn thiện khá tốt.
+                Những tính năng quan trọng được sắp xếp khá ngăn nắp và khoa
+                học, không làm người chơi rối mắt. Góc dưới màn hình là lối tắt
+                Cửa hàng, Bộ sưu tập, Bộ trang bị, Bảng xếp hạng, Túi đồ, Nhiệm
+                vụ, và cuối cùng là nút Tìm trận khá to rất dễ thao tác. Các
+                chức năng khác như Cài đặt hay Thư cũng được bố trí hợp lí phía
+                góc trên màn hình. Nhìn chung, Mọt đã có thiện cảm ngay từ khi
+                đăng nhập vào game.
+              </p>
+              <div class="small-title font-weight-bold">
+                Hình ảnh, hiệu năng
+              </div>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-7.jpg "
+                alt="anh minh hoa so 4"
+              />
+              <p>
+                Điểm tiếp theo mà Mọt muốn đề cập tới chính là đồ họa của Tốc
+                Chiến. Đồ họa chính là thứ hấp dẫn Mọt ngay từ lần đầu trò chơi
+                được giới thiệu bởi theo đánh giá của cá nhân thì nó rất sát với
+                người đàn anh trên PC. Nhưng khi được trải nghiệm trực tiếp thì
+                mọi thứ còn vượt xa kỳ vọng của Mọt dành cho trò chơi. Bản đồ
+                Summoner’s Rift nằm gọn trong lòng bàn tay của Mọt được thổi
+                trọn cái hồn của người đàn anh trên PC, mọi thông tin được hiển
+                thị rõ ràng trên màn hình điện thoại. Từng animation nhỏ của
+                tướng được chăm chút tỉ mỉ làm toát lên toàn bộ “chất” có được
+                từ phiên bản đi trước. Quái rừng nhảy múa sinh động, rồng nguyên
+                tố bay lượn bệ vệ, Baron Nashor sừng sững oai hùng… tất cả được
+                khắc họa sống động và sát hoàn toàn với những gì chúng ta vẫn
+                biết về LMHT.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-3.jpg"
+                alt="anh minh hoa so 5"
+              />
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/g-tXY0jjbuk"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe> -->
+              <p>
+                Đồ họa xuất sắc là một chuyện, ấy thế mà hiệu suất của Tốc Chiến
+                mới thực là điều khiến Mọt tui nể phục đội ngũ phát triển của
+                trò chơi. Ở thời điểm viết bài, Mọt đang sử dụng một chiếc điện
+                thoại tầm trung sử dụng chip Snapdragon 710 để trải nghiệm trò
+                chơi. Điều đáng nói ở đây là Mọt tui có thể đẩy mức đồ hoạ của
+                game lên cao nhất mà vẫn giữ được FPS ổn định trong khoảng 60
+                khung hình/giây. Chỉ những pha combat về cuối game với hàng tá
+                hiệu ứng xuất hiện thì FPS mới tụt xuống khoảng 54-55 FPS.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-8.jpg"
+                alt="anh minh hoa so 6"
+              />
+              <p>
+                Một điều đáng mừng dành cho những ai đang lo lắng về cấu hình
+                máy của mình là Tốc Chiến có hệ thống tinh chỉnh đồ họa vô cùng
+                chi tiết, bao gồm khử răng cưa, tùy chỉnh độ phân giải, texture,
+                hiệu ứng…Vì thế mà bạn đọc hãy yên tâm về việc liệu máy mình có
+                chơi được Tốc Chiến hay không nhé!
+              </p>
+              <div class="small-title font-weight-bold">
+                Âm thanh
+              </div>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-2.jpg "
+                alt="anh minh hoa so 7"
+              />
+              <p>
+                Không có nhiều điều để nói về âm thanh của Tốc Chiến. Có thể tóm
+                gọn mục này bằng một từ “tròn vai”. Các hiệu ứng âm thanh trong
+                Tốc Chiến như lồng tiếng, kỹ năng, âm tổng hay tiếng giao diện
+                đều được thể hiện tốt không kém gì phiên bản trên PC. Riêng có
+                một điểm làm cá nhân Mọt tui cảm thấy khá “ngợ” đó là việc giọng
+                của người thông báo trong game không giống với phiên bản PC. Tuy
+                nhiên đây cũng chỉ là ý kiến cá nhân của Mọt và không có nghĩa
+                thay đổi này cũng sẽ khiến bạn khó chịu.
+              </p>
+              <div class="small-title font-weight-bold">
+                Gameplay
+              </div>
+              <p>
+                Theo như thông báo của Riot, sẽ có tổng cộng 36 tướng xuất hiện
+                trong đợt thử nghiệm lần này. Tuy nhiên, bạn sẽ được tiếp cận
+                với khoảng 15 đến 17 tướng ở giai đoạn đầu (bao gồm tướng xoay
+                tua miễn phí và tướng Riot phát cho bạn). Số còn lại sẽ đòi hỏi
+                bạn phải “thăm ngàn” mới có thể mở khóa được. Giá mua tướng cũng
+                được niêm yết 5500 tinh hoa lam mỗi con. Riot cũng khá mát tay
+                trong khoản cày cuốc khi mà bạn sẽ nhận được tướng miễn phí khi
+                lên cấp ở giai đoạn đầu, ngoài ra chuỗi nhiệm vụ hằng ngày cũng
+                cung cấp một lượng kha khá tinh hoa lam cho người chơi. Để bạn
+                đọc dễ hình dung, sau khoảng 30 phút trải nghiệm thì Mọt tui đã
+                cày được hơn 2 ngàn 2 tinh hoa lam. Ngoài ra, Mọt tui cũng đếm
+                được có 29 skin xuất hiện trong đợt thử nghiệm lần này.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-6.jpg "
+                alt="anh minh hoa so 8"
+              />
+              <p>
+                Về gameplay của trò chơi, Tốc Chiến phải thay đổi rất nhiều so
+                với người đàn anh trên PC để có thể phù hợp với nền tảng di
+                động. Tốc độ của trò chơi sẽ được đẩy lên rất nhanh. Một trận
+                đấu trung bình sẽ kéo dài từ 15 tới 20 phút, vì thế mà thời gian
+                cooldown của kỹ năng cũng như phép bổ trợ chỉ bằng khoảng 40%
+                tới 50% phiên bản trên máy tính. Để bạn đọc dễ hình dung, Mọt
+                tui thường lên được món đồ thứ 2 trong khoảng 10 phút đầu của
+                trận đấu. Tuy nhiên, một điều tuyệt vời là dù tốc độ của trò
+                chơi bị đẩy lên rất nhanh nhưng Mọt tui vẫn cảm nhận rõ được
+                từng giai đoạn của game, mỗi khi nhân vật thăng tiến sức mạnh
+                hay chiếm đoạt thành công bùa lợi. Trải nghiệm của cả game đấu
+                được đóng gói lại gọn gàng mà chỉ khi nhìn lên đồng hồ đếm số
+                thì Mọt mới giật mình nhận ra trận đấu chỉ kéo dài chưa tới 20
+                phút. Điều này có nghĩa những thay đổi của Riot nhằm rút ngắn
+                thời gian trận đấu đang phát huy hiệu quả. Đây quả là một thành
+                tựu đáng ghi nhận của đội ngũ phát triển game.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-10.jpg"
+                alt="anh minh hoa so 9"
+              />
+              <p>
+                Hệ thống chia lane vẫn được giữ nguyên. Tính năng Mirror Map –
+                Bản đồ phản chiếu từng được Riot giới thiệu trong video cũng khá
+                dễ làm quen khi người chơi sẽ được chỉ đường đến đúng lane của
+                mình. Một số thay đổi về trang bị, ví dụ như nâng cấp kích hoạt
+                từ giày, hay kỹ năng kích hoạt của Gươm Vô Danh, Kiếm Ma
+                Youmuu,… được sửa thành nội tại, tuy mới mẻ nhưng Mọt tui cũng
+                dễ dàng làm quen chỉ sau vài ván đấu. Điểm mà Mọt thích nhất ở
+                Tốc Chiến có lẽ là hệ thống điều khiển thông minh. Ngoài 2 nút
+                phụ trợ Tấn công lính và Tấn công trụ thì Tốc Chiến cho thêm bạn
+                khả năng khoá mục tiêu nâng cao rất nhiều độ chính xác của xạ
+                thủ trong combat hoặc khi bạn tung kỹ năng chọn mục tiêu. Bạn
+                chỉ đơn giản giữ và kéo nút Tấn công tới mục tiêu; hoặc nhấn vào
+                biểu tượng của đối phương xuất hiện gần thanh kỹ năng để tiến
+                hành target-lock. Phải nói rằng kể từ thời của Vainglory thì Tốc
+                Chiến là tựa game thứ 2 mang cho Mọt tui cảm giác hài lòng với
+                thao tác cảm ứng.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/khiemnguyenba181/danh-gia-lmht-toc-chien-ban-alpha-9.jpg"
+                alt="anh minh hoa 10"
+              />
+              <p>
+                Một điểm đáng khen nữa của Tốc Chiến đó là hệ thống Fog of War
+                và cắm mắt được bê nguyên từ PC sang. Đây là một điểm mà ít có
+                tựa game nào trên thị trường di động làm được. Tuy Tốc Chiến
+                không có Mắt kiểm soát, thế nhưng dấu ấn chiến thuật tới từ hệ
+                thống Fog of War và mắt xanh/máy quét đã là quá đủ để Tốc Chiến
+                khác biệt hoàn toàn với phần còn lại.
+              </p>
+              <div class="small-title font-weight-bold">Kết</div>
+              <p>
+                Tuy mới chỉ là giai đoạn thử nghiệm nhưng những trải nghiệm mà
+                Tốc Chiến mang lại là trên cả tuyệt vời. Có thể nói, nhà phát
+                triển Riot đã giữ đúng lời hứa khi mang tới cho người hâm mộ một
+                trải nghiệm Liên Minh Huyền Thoại chính thống và mượt mà nhất có
+                thể trên nền tảng di động. Bản thân Mọt tui cũng rất háo hức
+                mong chờ những điều mà tựa game sẽ làm được trong tương lai,
+                nhất là hệ thống giải đấu chuyên nghiệp. Dù vẫn còn một vài điểm
+                gợn nhỏ như số lượng tướng eo hẹp, hay kết nối mạng không được
+                như ý (là do Mọt tui không có hộ khẩu Brazil), thế nhưng chắc
+                chắn rằng Riot có thể dễ dàng khắc phục chúng trong những đợt
+                thử nghiệm sắp tới.
+              </p>
+              <p class="font-weight-bold">Ưu điểm:</p>
+              <ul>
+                <li>
+                  Đồ họa được đầu tư kỹ lưỡng, mang nguyên dáng dấp của phiên
+                  bản PC
+                </li>
+                <li>Tối ưu hiệu suất tốt</li>
+                <li>
+                  Gameplay có nhiều tiến bộ so với mặt bằng chung trên di động
+                </li>
+                <li>Mở ra nhiều tiềm năng mới cho eSports trên di động</li>
+              </ul>
+              <p class="font-weight-bold">Nhược điểm:</p>
+              <ul>
+                <li>
+                  Do là phiên bản thử nghiệm nên còn hạn chế về lượng tướng,
+                  trang phục, biểu cảm…
+                </li>
+                <li>
+                  Giới hạn thử nghiệm tại Brazil và Philippines khiến đường
+                  truyền không ổn định
+                </li>
+              </ul>
+            </div>
+            <div class="author-box">
+              <img
+                class="author-avatar"
+                src="https://secure.gravatar.com/avatar/01422813e51da1159e561787f19ef506?s=230&d=mm&r=g"
+                alt="Dạ Vũ"
+              />
+              <div class="author-info">
+                <h4 class="author-name">
+                  Tác giả:
+                  <span>Dạ Vũ</span>
+                </h4>
+                <p class="author-description">
+                  -Đêm mưa buồn trên bến Tiêu Tương-
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments-area">
+            <h3 class="comments-title"></h3>
+            <hr />
+            <ul class="comment-list"></ul>
+          </div>
+          <div class="comment-area">
+            <h3 class="comments-title">Bình luận</h3>
+            <hr />
+            <form class="comment-respond">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Bình luận"
+              ></textarea>
+              <button type="submit" class="btn btn-primary btn-comment">
+                Đăng tải
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="game-infor">
+            <div class="title">
+              <h1 class="heading">
+                <a href="#">THÔNG TIN GAME</a>
+              </h1>
+              <hr />
+            </div>
+            <ul class="game-infor__list">
+              <li class="game-infor__item">
+                <h5>Tên Game</h5>
+                <div class="infor game-name">League Of Legend: Tốc Chiến</div>
+              </li>
+              <li class="game-infor__item">
+                <h5>Nhà phát hành</h5>
+                <div class="infor game-owner">Riot</div>
+              </li>
+              <li class="game-infor__item">
+                <h5>Nền tảng</h5>
+                <div class="infor game-base">Android | IOS</div>
+              </li>
+              <li class="game-infor__item">
+                <h5>Thể loại</h5>
+                <div class="infor game-type">MOBA</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="logo-wrap">
+              <a href="#" class="footer__logo">
+                <img
+                  width="150"
+                  height="150"
+                  src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png"
+                  alt="ft-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ONLINE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    PC/CONSOLE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME MOBILE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ESPORTS
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    TIN TỨC
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list policy">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Giới thiệu
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Chính sách bảo mật
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Điều khoản sử dụng
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Liên hệ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__social">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="game-name">Crossfire Zero</div> -->
+    </footer>
+    <script src="../js/data.js"></script>
+    <script src="../js/render-main-page.js"></script>
+    <script src="../js/login-and-register.js"></script>
+    <script src="../js/render-comment.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

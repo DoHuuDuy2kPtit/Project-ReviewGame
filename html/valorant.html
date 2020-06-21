@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1d8617e925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <script src="./format-letter.js"></script>
+  <body>
+    <!-- Nav-bar -->
+    <header>
+      <div class="container">
+        <div class="top-nav">
+          <a class="top-navbar-brand" href="#"> </a>
+          <div class="top-navbar__account">
+            <a href="#" class="top-navbar__account-register">Đăng kí</a>
+            <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: var(--primary-color); height: 72px;"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAME ONLINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PC/CONSOLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ESPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAMES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TIN TỨC</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  XẾP HẠNG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">TOP 5 Game hay nhất</a>
+                  <a class="dropdown-item" href="#">TOP 5 Game tệ nhất</a>
+                  <a class="dropdown-item" href="#">TOP 5 Game mới nhất</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Tìm kiếm ..."
+                hidefocus="true"
+                style="outline: none;"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div style="background-color: black; width: 100%; height: 40px;">
+        <div class="container">
+          <div class="menu__social">
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
+    <!-- Main content -->
+    <div class="top-banner">
+      <div class="container">
+        <img
+          class="top-banner__image"
+          src="https://motgame.vn/wp-content/uploads/2020/03/Bookgrinder/valorant-banner.jpg"
+        />
+        <div class="top-banner__review">
+          <a href class="top-banner__review-type">Game online</a>
+          <div class="big-title">
+            <h1 class="font-weight-bold">
+              Đánh giá Valorant – Cái game này chưa cho Overwatch xuống mộ được
+              đâu!
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="seperate" style="margin: 30px;"></div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="wrapper">
+            <div class="detail">
+              <p class="font-weight-bold" style="font-size: 20px;">
+                Bất chấp việc có rất nhiều player đang tháo chạy qua Valorant,
+                thì tôi vẫn đánh giá tựa game này chưa thể vươn mình lên thành
+                siêu phẩm được đâu.
+              </p>
+              <p>
+                Vậy là sau rất nhiều chờ đợi, quảng cáo và nhá hàng… cuối cùng
+                thì
+                <a href="#" class="text-danger">
+                  Valorant
+                </a>
+                – tựa game bắn súng đầu tiên của Riot Games cũng chính thức ra
+                mắt (ở chỗ mà game thủ Việt Nam có thể chơi). Nó ngay lập tức
+                thu hút sự chú ý của cộng đồng và kể cả không phải fan của thể
+                loại FPS thì cũng tò mò thử. Tuy vậy, mặc dù Valorant có những
+                điểm sáng đáng giá nhưng nó còn một chặng đường rất dài để đẩy
+                ngã Overwatch chứ đừng nói soán ngôi CS:GO.
+              </p>
+              <div class="small-title font-weight-bold">
+                Lối chơi “mượn tạm” mỗi cái một chút
+              </div>
+              <p>
+                Điều dễ thấy nhất của Valorant đó là nó giống như đứa con lai
+                của Overwatch và CS:GO, nói chính xác là game sẽ lấy hệ thống
+                súng, bản đồ và mua sắm của CS:GO rồi tới kỹ năng hero
+                Overwatch, sau đó kết hợp lại với nhau thành cái mà bạn thấy. Cụ
+                thể hiện tại thì Valorant cũng có 2 bên tấn công và phòng thủ
+                tương tự cảnh – cướp của CS:GO, trong đó bên tấn công sẽ tìm
+                cách để cắm một thiết bị gọi là spike (hay gọi là bom cũng
+                được), sau khoảng thời gian nhất định bom nổ thì bên tấn công sẽ
+                thắng và ngược lại. Khi ở bên phòng thủ thì kể cả là bạn có tiêu
+                diệt toàn bộ kẻ địch mà không gỡ được bom, thì round đấu đó vẫn
+                sẽ thua.
+              </p>
+              <p>
+                Có nhiều người hẳn sẽ thắc mắc về cơ chế kỹ năng và mua đồ của
+                Valorant, thực ra nó rất là đơn giản thôi. Cũng giống như
+                Overwatch, Valorant có các nhân vật gọi là Agents, mỗi Agents
+                như vậy sẽ có các kỹ năng đặc biệt và một chiêu cuối. Thí dụ như
+                Jett là sát thủ, Sage là hỗ trợ hay Breach thiên về kiểm soát
+                chiến trường. Nhưng không như Overwatch, bạn phải mua kỹ năng
+                cho các Agents (trừ chiêu cuối), nó giống như việc chúng ta mua
+                lựu đạn trong CS:GO vậy, tương tự thì súng cũng phải mua chứ
+                không phải miễn phí nhé.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/vuhoang/valorante.png "
+                alt="anh minh hoa so 1"
+              />
+              <p>
+                Tới đây thì chắc mọi người cũng nắm được cơ bản cách chơi của
+                Valorant rồi, đơn giản nó là CS:GO với các hero của Overwatch mà
+                thôi. Các loại súng trong Valorant cũng rất cơ bản khi nó hiện
+                tại chia ra làm 5 loại là: súng lục, shotgun, súng trường, súng
+                ngắm và súng hạng nặng. Mỗi loại súng sẽ có chỉ số tầm bắn, sát
+                thương, tốc độ bắn đạn theo giây và độ giật… nếu là một người đã
+                từng chơi CS:GO thì bạn sẽ thấy nó gần như y chang nhau, đặc
+                biệt là hình dáng và độ giật của súng.
+              </p>
+              <p>
+                Các kỹ năng trong Valorant là mua nên chúng có số lượng dùng
+                nhất định chứ không phải bất tử, thực tế thì kể cả những kỹ năng
+                có thời hồi cũng chỉ dùng được 1 tới 2 lần là nhiều vì ván đấu
+                kết thúc rất nhanh. Cũng giống như Overwatch thì chiêu cuối của
+                bạn sẽ từ từ lên khi bắn trúng kẻ địch hoặc nhặt các cục ngọc
+                buff rải rác trong quá trình chơi, chúng khá đa dạng từ hồi
+                sinh, ném bom, phóng phi tiêu hay tàng hình…
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/vuhoang/valorantqq.jpg"
+                alt="anh minh hoa so 2"
+              />
+              <p>
+                Bản đồ của Valorant làm theo phong cách của CS:GO với các choke
+                point và hành lang kéo xuyên suốt nhau, nhưng có một điểm là nó
+                khá nhỏ, thành ra người chơi rất dễ chạm mặt nhau ngay từ đầu.
+                Điều này dẫn tới việc là một ván đấu diễn ra cực nhanh, có khi
+                chưa tới 3 phút là đã có một bên bị tiêu diệt sạch sẽ rồi.
+                Valorant thậm chí còn có chế độ đấu nhanh khi bạn chỉ cần thắng
+                4 ván (bình thường là 13) là xong, cho nên nó cực kỳ thích hợp
+                để giải trí nhanh gọn. Tuy vậy nó cũng chỉ đến mức là “giải trí
+                nhanh gọn” thôi, chứ so sánh cùng Overwatch hay CS:GO thì vẫn
+                còn kém một khoảng rất dài.
+              </p>
+              <p>
+                Đầu tiên là súng, súng trong bắn không đằm như CS:GO và ít độ
+                giật hơn >> dễ aim hơn, nhưng nó lại cực kỳ ít đạn và bạn cũng
+                không thể mua đạn giữa chừng. Điều này làm cho tiết tấu quá
+                nhanh mà bản đồ thì nhỏ, thành ra việc di chuyển chiến thuật
+                giữa các thành viên sẽ không được tối ưu. Bạn chẳng cần phải
+                chia người làm quái gì cho mệt, khi mà cứ rush đủ 5 người là
+                nhanh nhất.
+              </p>
+              <p>
+                Tiếp theo hệ thống kỹ năng trong Valorant chưa đủ sức “lật” cả
+                ván đấu như Overwatch, sẽ không có những pha bạn làm Reaper hay
+                Genji lao vào chặt chém tưng bừng đâu, vì chiêu cuối chỉ ở mức
+                “mạnh” chứ không phải kinh hoàng như Overwatch. Tôi không thích
+                điều này lắm vì nó khiến cho game mất đi phần thể hiện kỹ năng,
+                với lại bắn súng đã giống CS:GO rồi mà còn không cho đọ tay bo
+                bằng chiêu cuối nữa thì… có vẻ nó khá là nhàm chán.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/vuhoang/valorant.jpg"
+                alt="anh minh hoa so 3"
+              />
+              <p>
+                Và Valorant còn rất nhiều thứ bất cập, thí dụ như không cho thay
+                Agent giữa trận, chưa có thêm bản đồ, chưa có nhiều chế độ chơi,
+                vũ khí hơi bị quá đơn điệu… kiểu như nó giống một cái nồi lẩu
+                thập cẩm trộn mỗi thứ một chút, nhưng cái nào cũng bình bình
+                chẳng nổi bật được, mới đầu chơi kiểu là lạ cho vui thì hay
+                nhưng tôi chưa thấy tiềm năng nào giúp nó có thể đánh bại được
+                Overwatch hay CS:GO.
+              </p>
+              <div class="small-title font-weight-bold">
+                Đồ họa cho cảm giác hoài cổ
+              </div>
+              <p>
+                Đồ họa siêu nhẹ là ưu điểm cực lớn của Valorant, cái này thì
+                Riot Games làm quá tốt vì bảo đảm là bất cứ máy tính nào hiện
+                tại (trừ mấy cái tối cổ) cũng có thể trải nghiệm game mượt mà.
+                Việc đăng ký Valorant tự động phân theo IP của người dùng cũng
+                khá thông minh, khi nó bảo đảm bạn sẽ có đường truyền tốt nhất
+                (mặc dù hiện tại game thủ Việt Nam muốn chơi phải fake IP sang
+                server SEA). Tạo hình các nhân vật ở mức tạm được, tất nhiên nếu
+                nói về phong cách hay chất riêng thì vẫn còn thua xa Overwatch,
+                nhưng ít nhất thì với một game kiểu như Valorant thì thế là ổn
+                rồi.
+              </p>
+              <p>
+                Phần âm thanh cũng rất tốt khi Riot Games cực kỳ chú trọng việc
+                làm sao để nổi bật tiếng bước chân và tiếng di chuyển. Bạn sẽ
+                cảm nhận ra rằng tầm xa và mức độ nặng nhẹ của kẻ địch xung
+                quanh, cũng như hướng đạn và tiếng rít của kỹ năng khi nó bay
+                vào người mình. Nhưng mà vẫn câu nói cũ, bản đồ quá bé thành ra
+                đôi khi mọi thứ nó cứ lẫn loạn cào cào cả lên, thậm chí nhiều
+                khi vừa bước ra ngoài đã gặp nhau luôn thì còn cần quái gì nghe
+                ngóng nữa.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/vuhoang/valorantss.jpg"
+                alt="anh minh hoa so 4"
+              />
+              <!-- <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/g-tXY0jjbuk"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe> -->
+              <p>
+                Cuối cùng xét theo thời gian ngắn thì Valorant còn xa mới đạt
+                tới tầm có thể thi đấu như Overwatch hoặc CS:GO, vì nó không tạo
+                được hứng thú cần thiết cho người xem. Nếu như tính về chiến
+                thuật thì như tôi đã nói bản đồ quá nhỏ và không thể đổi Agents
+                khi chơi, thành ra bạn sẽ dính chết từ đầu tới cuối chứ không
+                xoay chuyển tùy tình hình được. Hơn nữa mỗi Agent lại có kỹ năng
+                khác nhau chứ không như CS:GO, nói đơn giản thì nếu muốn chơi
+                lựu đạn khói thì bạn buộc phải chọn đúng Agents và đạn lửa cũng
+                vậy… nhưng nếu như tới lúc thua mới nhận ra mình không cần chúng
+                thì sao, mọi thứ khá là mệt mỏi đấy.
+              </p>
+              <p>
+                Còn nếu xét theo kiểu biểu diễn thì lại càng thiếu, Overwatch
+                nổi tiếng vì những màn “cân all” đầy ảo diệu khi một ai đó bật
+                ulti và lên đồng, nhưng do chiêu cuối trong Valorant còn chưa bá
+                tới độ đó (chắc vì bản đồ nhỏ nên phải giảm), nên bạn sẽ thấy có
+                chiêu cuối hay không đôi khi cũng chẳng ảnh hưởng lắm tới chiến
+                thắng. Với những newbie thì điều này rất quan trọng, vì tôi bắn
+                vốn đã trình gà mà còn gặp tình trạng này nữa, đáng lý là phải
+                chống càng như Bastion mới phải chứ, cho người ta cảm giác sung
+                sướng khi multi kill thì chơi mới lâu được.
+              </p>
+              <img
+                src="https://motgame.vn/wp-content/uploads/2020/06/Bookgrinder/huong-dan-valorant-5.jpg"
+                alt="anh minh hoa so 5"
+              />
+              <p class="font-weight-bold">Ưu điểm:</p>
+              <ul>
+                <li>Cấu hình cực nhẹ, đồ họa tươi sáng dễ nhìn</li>
+                <li>Lối chơi kết hợp cả CS:GO lẫn Overwatch</li>
+                <li>Một ván đấu diễn ra rất nhanh, giải trí tốt.</li>
+              </ul>
+              <p class="font-weight-bold">Nhược điểm:</p>
+              <ul>
+                <li>Chưa thực sự có điểm nhấn.</li>
+                <li>
+                  Số lượng kỹ năng nhiều nhưng không thực sự bá đạo như
+                  Overwatch.
+                </li>
+                <li>Chưa rõ sẽ đánh vào đối tượng nào, casual hay tryhard.</li>
+              </ul>
+            </div>
+            <div class="author-box">
+              <img
+                class="author-avatar"
+                src="https://secure.gravatar.com/avatar/fd1ded5688ced041bf1e871c4bf86960?s=115&d=mm&r=g"
+                alt="vuhoang"
+              />
+              <div class="author-info">
+                <h4 class="author-name">
+                  Tác giả:
+                  <span>vuhoang</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments-area">
+            <h3 class="comments-title"></h3>
+            <hr />
+            <ul class="comment-list"></ul>
+          </div>
+          <div class="comment-area">
+            <h3 class="comments-title">Bình luận</h3>
+            <hr />
+            <form class="comment-respond">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Bình luận"
+              ></textarea>
+              <button type="submit" class="btn btn-primary btn-comment">
+                Đăng tải
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="game-infor">
+            <div class="title">
+              <h1 class="heading">
+                <a href="#">THÔNG TIN GAME</a>
+              </h1>
+              <hr />
+            </div>
+            <ul class="game-infor__list">
+              <li class="game-infor__item">
+                <h5>Tên Game</h5>
+                <div class="infor game-name">Valorant</div>
+              </li>
+              <li class="game-infor__item">
+                <h5>Nhà phát hành</h5>
+                <div class="infor game-owner">Riot</div>
+              </li>
+              <li class="game-infor__item">
+                <h5>Nền tảng</h5>
+                <div class="infor game-base">PC</div>
+              </li>
+              <li class="game-infor__item">
+                <h5>Thể loại</h5>
+                <div class="infor game-type">Bắn súng | FPS</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="logo-wrap">
+              <a href="#" class="footer__logo">
+                <img
+                  width="150"
+                  height="150"
+                  src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png"
+                  alt="ft-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ONLINE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    PC/CONSOLE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME MOBILE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ESPORTS
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    TIN TỨC
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list policy">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Giới thiệu
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Chính sách bảo mật
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Điều khoản sử dụng
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Liên hệ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__social">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="game-name">Crossfire Zero</div> -->
+    </footer>
+    <script src="../js/data.js"></script>
+    <script src="../js/render-main-page.js"></script>
+    <script src="../js/login-and-register.js"></script>
+    <script src="../js/render-comment.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
