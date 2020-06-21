@@ -8,7 +8,7 @@ class User {
 }
 
 class Game {
-  constructor(name, title, type, image, introduce) {
+  constructor(name, title, type, image, introduce, link) {
     this.name = name;
     this.title = title;
     this.type = type;
@@ -16,6 +16,7 @@ class Game {
     this.introduce = introduce;
     this.date = new Date();
     this.feedback = [];
+    this.link = link;
   }
 }
 
@@ -35,7 +36,8 @@ const gordianQuest = new Game(
   "Đánh giá Gordian Quest: Cứu thế giới bằng một lần chơi chẵn/lẻ",
   type[1],
   "./images/gordian-quest.jpg",
-  "Với lối chơi nhập vai truyền thống kết hợp với thẻ bài, Gordian Quest được đánh giá sẽ đem lại trải nghiệm mới khác biệt với các game RPG trước đây."
+  "Với lối chơi nhập vai truyền thống kết hợp với thẻ bài, Gordian Quest được đánh giá sẽ đem lại trải nghiệm mới khác biệt với các game RPG trước đây.",
+  "#"
 );
 
 const lol = new Game(
@@ -43,7 +45,8 @@ const lol = new Game(
   "Đánh giá LMHT: Tốc Chiến Alpha Test – Tiêu chuẩn mới cho MOBA trên di động",
   type[2],
   "./images/lol.jpg",
-  "Dù mới là giai đoạn thử nghiệm giới hạn, có thể khẳng định Tốc Chiến sẽ mở ra những tiềm năng vô hạn cho thị trường MOBA trên di động."
+  "Dù mới là giai đoạn thử nghiệm giới hạn, có thể khẳng định Tốc Chiến sẽ mở ra những tiềm năng vô hạn cho thị trường MOBA trên di động.",
+  "#"
 );
 
 const valorant = new Game(
@@ -51,7 +54,8 @@ const valorant = new Game(
   "Đánh giá Valorant – Cái game này chưa cho Overwatch xuống mộ được đâu!",
   type[0],
   "./images/valorant.jpg",
-  "Bất chấp việc có rất nhiều player đang tháo chạy qua Valorant, thì tôi vẫn đánh giá tựa game này chưa thể vươn mình lên thành siêu phẩm được đâu."
+  "Bất chấp việc có rất nhiều player đang tháo chạy qua Valorant, thì tôi vẫn đánh giá tựa game này chưa thể vươn mình lên thành siêu phẩm được đâu.",
+  "#"
 );
 
 const crossFireZero = new Game(
@@ -59,7 +63,8 @@ const crossFireZero = new Game(
   "Đánh giá Crossfire Zero – Một diện mạo mới của Đột Kích",
   type[0],
   "./images/crossfire-zero.jpg",
-  "Crossfire Zero sẽ khiến những người theo Đột Kích từ những ngày đầu như Mọt cảm thấy thật thân quen như thời mới bước vào Beta của Đột Kích 12 năm trước."
+  "Crossfire Zero sẽ khiến những người theo Đột Kích từ những ngày đầu như Mọt cảm thấy thật thân quen như thời mới bước vào Beta của Đột Kích 12 năm trước.",
+  "./crossfire-zero.html"
 );
 
 const bezt = new Comment("chung", "da bezt", 0);

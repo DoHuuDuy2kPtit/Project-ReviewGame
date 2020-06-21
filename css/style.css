@@ -332,6 +332,26 @@ body{
     height: 56px;
 }
 
+/* Game infor */
+
+.game-infor__list{
+    list-style: none;
+}
+
+.game-infor__item{
+    margin-top: 15px;
+}
+
+.game-infor__item>h5{
+    color: black;
+    font-weight: bold;
+}
+
+.game-infor__item>div{
+    color:var(--primary-color);
+    font-size: 16px;
+}
+
 /* Footer */
 
 .footer{

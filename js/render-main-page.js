@@ -20,12 +20,12 @@ function renderMainPage(arr) {
        </div>
        <div class="post-review__content">
          <h2 class="post-review__content-title">
-           <a href="#" class="post-review__content-link">
+           <a href="${obj.link}" target = "_self" class="post-review__content-link">
              ${obj.title}
            </a>
          </h2>
          <div class="post-review__content-meta">
-           <a href="#" class="meta-type">
+           <a href="${obj.link}" target = "_self" class="meta-type">
              ${obj.type}
            </a>
            <span class="meta-date">${obj.date}</span>
