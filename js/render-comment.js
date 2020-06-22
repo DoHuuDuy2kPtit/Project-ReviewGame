@@ -11,7 +11,7 @@ btn.addEventListener("click", (e) => {
   const commentArea = document.querySelector("textarea");
   const comment = commentArea.value;
   const author = "";
-  const rate = 0;
+  const rate = slider.value / 10;
   const feedback = new Comment(author, comment, rate);
   game[0].feedback.push(feedback);
   commentArea.value = "";
