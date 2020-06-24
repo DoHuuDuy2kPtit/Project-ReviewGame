@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu</title>
+    <script
+      src="https://kit.fontawesome.com/1d8617e925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet prefetch"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <header>
+      <div class="container">
+        <div class="top-nav">
+          <a class="top-navbar-brand" href="#"> </a>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: var(--primary-color); height: 72px;"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAME ONLINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PC/CONSOLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ESPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GAMES</a>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div> -->
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Tìm kiếm ..."
+                hidefocus="true"
+                style="outline: none;"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div style="background-color: black; width: 100%; height: 40px;">
+        <div class="container">
+          <div class="menu__social">
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <!-- Giới thiệu về review game  -->
+    <div class="introduce">
+      <div class="container">
+        <div class="title font-weight-bold">
+          <h3>Giới thiệu về Review Game</h3>
+        </div>
+        <p>Chào mừng tới Review Game!</p>
+        <p>
+          Review Game là gì? Thực sự bản thân mặt chữ đã nói rõ, là để chỉ một
+          tay chơi game lâu năm thích tìm hiểu và trải nghiệm thế giới game.
+          Thời xưa khi con chữ và kiến thức nằm ở những trang sách thì chúng ta
+          có Mọt Sách, thời nay khi thế giới hiện đại phát triển với số hóa
+          chúng ta có game và một cộng đồng Mọt Game. Và vì lý do đó Review Game
+          đã ra đời.
+        </p>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="logo"
+          class="mx-auto d-block"
+        />
+        <p>
+          Vậy Review Game là ai? Xin trả lời Review Game là tôi, là bạn và là
+          tất cả chúng ta. Bên trong mỗi game thủ chúng ta đều có một tên Mọt
+          luôn khát khao muốn hiểu thêm muốn biết thêm vễ những thế giới chúng
+          ta từng trải qua và cũng muốn khám phá thêm những thế giới game mới
+          trong tương lai. Thế giới của mỗi game không gói gọn trong hành trình
+          chơi, chúng còn nằm rải rác trong các tư liệu nhặt vội, những bia đá
+          dòng chữ còn để lại về những sự kiện nào đó trong quá khứ và cũng có
+          thể nằm trong một quyển tiểu thuyết hay truyện tranh phát hành kèm
+          theo. Chẳng phải một phần nào đó trong bạn muốn biết hết về chúng,
+          muốn trở thành một tên đi tìm tòi đọc thêm hay sao?
+        </p>
+        <p>
+          Chính vì thế, team Review Game đã hình thành với mục tiêu chuyển tải
+          những bài viết về thế giới game, những thứ có thể bạn chưa biết, những
+          bình luận đánh giá về vận mệnh của game, nhà làm game và nền công
+          nghiệp game. Những tâm tư nguyện vọng của các game thủ mobile chơi
+          Candy Crush Saga thường bị cho rằng “không đủ chuẩn làm game thủ,
+          những game thủ chơi game MOBA bị cho là “nhai game rác”, những người
+          mua game bản quyền để rồi bị gán là “bọn nhà giàu thích hoang phí” đều
+          sẽ được team Mọt truyền tải.
+        </p>
+        <p>
+          Có thể mỗi chúng ta nằm trong một nhóm bị kỳ thị lẫn nhau nhưng tất cả
+          chúng ta tạo nên cộng đồng game thủ. Mỗi người có khẩu vị riêng, sở
+          thích riêng có thể làm những kẻ khác thấy ngứa mắt nhưng xã hội ngoài
+          kia đều nhìn chúng ta là cùng 1 nhóm: Bọn Mọt Game.
+        </p>
+        <p>Hiện tại Review đang có những kênh mạng xã hội sau:</p>
+        <ul>
+          <li>
+            <a
+              class="text-danger"
+              href="https://www.youtube.com/watch?v=X6qcBhIdlT8"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a class="text-danger" href="https://www.facebook.com"
+              >Fanpage Facebook</a
+            >
+          </li>
+          <li>
+            <a class="text-danger" href="http://www.facebook.com"
+              >Group Facebook</a
+            >
+          </li>
+          <li>
+            <a class="text-danger" href="https://twitter.com/?lang=vi"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a class="text-danger" href="https://www.instagram.com/9gag/"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="logo-wrap">
+              <a href="#" class="footer__logo">
+                <img
+                  width="150"
+                  height="150"
+                  src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png"
+                  alt="ft-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ONLINE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    PC/CONSOLE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME MOBILE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ESPORTS
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    TIN TỨC
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list policy">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Giới thiệu
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Chính sách bảo mật
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    Điều khoản sử dụng
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__social">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

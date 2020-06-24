@@ -1,112 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/1d8617e925.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/base.css">
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/1d8617e925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body>
     <!-- Nav-bar -->
     <header>
-            <div class="container">
-                <div class="top-nav">
-                    <a class="top-navbar-brand" href="#">
-                    </a>
-                    <div class="top-navbar__account">
-                        <a href="#" class="top-navbar__account-register">Đăng kí</a>
-                        <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
-                    </div>
-                </div>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color:var(--primary-color); height: 72px;">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">GAME ONLINE</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">PC/CONSOLE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ESPORTS</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">GAMES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">TIN TỨC</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              XẾP HẠNG
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">TOP 5 Game hay nhất</a>
-                              <a class="dropdown-item" href="#">TOP 5 Game tệ nhất</a>
-                              <a class="dropdown-item" href="#">TOP 5 Game mới nhất</a>
-                              <!-- <div class="dropdown-divider"></div> -->
-                              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                            </div>
-                          </li>
-                          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <div class="container">
+        <div class="top-nav">
+          <a
+            class="top-navbar-brand"
+            href="../html/index.html"
+            target="_self"
+          ></a>
+          <div class="top-navbar__account">
+            <a href="#" class="top-navbar__account-register">Đăng kí</a>
+            <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light"
+        style="background-color: var(--primary-color); height: 72px;"
+      >
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="game-online">GAME ONLINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="pc-console">PC/CONSOLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="game-mobile">GAME MOBILE</a>
+              </li>
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>
                           </div> -->
-                      </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm ..." hidefocus="true" style="outline: none;">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                      </form>
-                    </div>
-                </div>
-            </nav>
-            <div style="background-color: black; width: 100%; height: 40px;">
-                <div class="container">
-                    <div class="menu__social">
-                        <a href="#">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-youtube-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        <!-- </div> -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Tìm kiếm ..."
+                hidefocus="true"
+                style="outline: none;"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div style="background-color: black; width: 100%; height: 40px;"></div>
+      <!-- </div> -->
     </header>
     <!-- Main content -->
     <div class="container">
-        <div class="seperate" style="margin: 30px">
-        </div>
-        <div class="row">
-            <div class="col-sm-8">
-                <div class="rating">
-                    <div class="title">
-                        <h1 class="heading">
-                            ĐÁNH GIÁ
-                        </h1>
-                        <hr>
-                    </div>
-                    <section class="rating__list-posts">
-                        <!-- <article class="rating__post-item">
+      <div class="seperate" style="margin: 30px;"></div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="rating">
+            <div class="title">
+              <h1 class="heading">
+                ĐÁNH GIÁ
+              </h1>
+              <hr />
+            </div>
+            <section class="rating__list-posts">
+              <!-- <article class="rating__post-item">
                             <div class="inner">
                                 <div class="post-review">
                                     <div class="post-review__thumb">
@@ -218,188 +222,236 @@
                                 <hr>
                             </div>
                         </article> -->
-                    </section>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="news-title">
-                    <div class="title">
-                        <h1 class="heading">
-                            <a href="#">TRÀ ĐÁ GAME THỦ</a> 
-                        </h1>
-                        <hr>
-                    </div>
-                    <ul class="list-news">
-                        <li class="big-item item-news">
-                            <a href="#" style="background-image: url('https://motgame.vn/wp-content/uploads/2020/06/Kujimatowa/game-thu-toxic-368x207.jpg');"></a>
-                            <div>
-                                <span class="date-news">15/06/2020</span>
-                                <h4>
-                                    <a href="#">Khi mạt sát đồng đội trở thành tâm bệnh khó chữa của game thủ toxic</a>
-                                </h4>
-                            </div>
-                        </li>
-                        <li class="item-news">
-                            <div class="item-new__wrapper">
-                                <div class="item-new__title">
-                                    <h4>
-                                        <a href="#" class="item-new__link">
-                                            Valorant và cuộc di dân Exodus của game thủ CSGO bán chuyên
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="#" class="item-new__img" style='background-image: url("https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/valorant-va-cuoc-di-dan-exodus-cua-game-thu-csgo-ban-chuyen-ava-192x108.jpg");'></a>
-                            </div>
-                        </li>
-                        <li class="item-news">
-                            <div class="item-new__wrapper">
-                                <div class="item-new__title">
-                                    <h4>
-                                        <a href="#" class="item-new__link">
-                                            Cuộc cách mạng của Mobile Esports sẽ thay đổi tương lai game di động?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="#" class="item-new__img" style='background-image: url("https://motgame.vn/wp-content/uploads/2020/06/Ronin/cuoc-cach-mang-cua-mobile-esports-se-thay-doi-tuong-lai-hay-tu-giet-chinh-ban-than-thump-192x108.jpg");'></a>
-                            </div>
-                        </li>
-                        <li class="item-news">
-                            <div class="item-new__wrapper">
-                                <div class="item-new__title">
-                                    <h4>
-                                        <a href="#" class="item-new__link">
-                                            Epic Games và câu chuyện “tiếp tay” cho dân chơi crack
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="#" class="item-new__img" style='background-image: url("https://motgame.vn/wp-content/uploads/2020/05/vuhoang/gta-v2-192x108.jpg");'></a>
-                            </div>
-                        </li>
-                        <li class="item-news">
-                            <div class="item-new__wrapper">
-                                <div class="item-new__title">
-                                    <h4>
-                                        <a href="#" class="item-new__link">
-                                            Tại sao game bắn súng ngày càng được ưa thích trên điện thoại?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="#" class="item-new__img" style='background-image: url("https://motgame.vn/wp-content/uploads/2020/05/Jarvis/game-ban-sung-dang-tro-nen-duoc-ua-chuong-hon-tren-mobile-192x108.jpg");'></a>
-                            </div>
-                        </li>
-                        <li class="item-news">
-                            <div class="item-new__wrapper">
-                                <div class="item-new__title">
-                                    <h4>
-                                        <a href="#" class="item-new__link">
-                                            Legend of Zelda và những điều thấy hơi ”lạ” khi đã trưởng thành – P.3
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="#" class="item-new__img" style='background-image: url("https://motgame.vn/wp-content/uploads/2020/05/Kujimatowa/zelda-va-nhung-thu-ky-la-3-192x108.jpg");'></a>
-                            </div>
-                        </li>
-                        <li class="item-news">
-                            <div class="item-new__wrapper">
-                                <div class="item-new__title">
-                                    <h4>
-                                        <a href="#" class="item-new__link">
-                                            Ghost of Tsushima sẽ thất bại vì kiểu chơi “bắt chước” Assassin's Creed?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="#" class="item-new__img" style='background-image: url("https://motgame.vn/wp-content/uploads/2020/05/vuhoang/ghost-of-tsushima-2-192x108.jpg");'></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </section>
+          </div>
         </div>
+        <div class="col-sm-4">
+          <div class="news-title">
+            <div class="title">
+              <h1 class="heading">
+                <a href="#">TRÀ ĐÁ GAME THỦ</a>
+              </h1>
+              <hr />
+            </div>
+            <ul class="list-news">
+              <li class="big-item item-news">
+                <a
+                  href="#"
+                  style="
+                    background-image: url('https://motgame.vn/wp-content/uploads/2020/06/Kujimatowa/game-thu-toxic-368x207.jpg');
+                  "
+                ></a>
+                <div>
+                  <span class="date-news">15/06/2020</span>
+                  <h4>
+                    <a href="#"
+                      >Khi mạt sát đồng đội trở thành tâm bệnh khó chữa của game
+                      thủ toxic</a
+                    >
+                  </h4>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Valorant và cuộc di dân Exodus của game thủ CSGO bán
+                        chuyên
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/valorant-va-cuoc-di-dan-exodus-cua-game-thu-csgo-ban-chuyen-ava-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Cuộc cách mạng của Mobile Esports sẽ thay đổi tương lai
+                        game di động?
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/06/Ronin/cuoc-cach-mang-cua-mobile-esports-se-thay-doi-tuong-lai-hay-tu-giet-chinh-ban-than-thump-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Epic Games và câu chuyện “tiếp tay” cho dân chơi crack
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/vuhoang/gta-v2-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Tại sao game bắn súng ngày càng được ưa thích trên điện
+                        thoại?
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/Jarvis/game-ban-sung-dang-tro-nen-duoc-ua-chuong-hon-tren-mobile-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Legend of Zelda và những điều thấy hơi ”lạ” khi đã
+                        trưởng thành – P.3
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/Kujimatowa/zelda-va-nhung-thu-ky-la-3-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+              <li class="item-news">
+                <div class="item-new__wrapper">
+                  <div class="item-new__title">
+                    <h4>
+                      <a href="#" class="item-new__link">
+                        Ghost of Tsushima sẽ thất bại vì kiểu chơi “bắt chước”
+                        Assassin's Creed?
+                      </a>
+                    </h4>
+                  </div>
+                  <a
+                    href="#"
+                    class="item-new__img"
+                    style="
+                      background-image: url('https://motgame.vn/wp-content/uploads/2020/05/vuhoang/ghost-of-tsushima-2-192x108.jpg');
+                    "
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer class="footer" style="margin-top:20px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <div class="logo-wrap">
-                        <a href="#" class="footer__logo">
-                            <img width= "150" height= "150" src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png" alt="ft-logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-10">
-                    <div class="footer-menu">
-                        <ul class="footer-menu__list">
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    GAME ONLINE
-                                </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    PC/CONSOLE
-                                </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    GAME MOBILE
-                                </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    GAME ESPORTS
-                                </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    TIN TỨC
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="footer-menu__list policy">
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    Giới thiệu
-                                </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    Chính sách bảo mật
-                                </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    Điều khoản sử dụng
-                                </a>
-                            </li>
-                            <li class="footer-menu__item">
-                                <a href="#">
-                                    Liên hệ
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu__social">
-                        <a href="#">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-youtube-square"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </div>
-                </div>
+    <footer class="footer" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="logo-wrap">
+              <a href="#" class="footer__logo">
+                <img
+                  width="150"
+                  height="150"
+                  src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png"
+                  alt="ft-logo"
+                />
+              </a>
             </div>
+          </div>
+          <div class="col-sm-10">
+            <div class="footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME ONLINE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    PC/CONSOLE
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="#">
+                    GAME MOBILE
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer-menu__list policy">
+                <li class="footer-menu__item">
+                  <a href="../html/introduce.html" target="_self">
+                    Giới thiệu
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="../html/policy.html" target="_self">
+                    Chính sách bảo mật
+                  </a>
+                </li>
+                <li class="footer-menu__item">
+                  <a href="../html/using.html" target="_self">
+                    Điều khoản sử dụng
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__social">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="../js/data.js"></script>
     <script src="../js/render-main-page.js"></script>
+    <script src="../js/render-filter-type.js"></script>
     <script src="../js/login-and-register.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
