@@ -1,18 +1,19 @@
-let game_online = document.getElementById("game-online");
+let game_online = document.querySelectorAll(".game-online");
 
-let pc_console = document.getElementById("pc-console");
+let pc_console = document.querySelectorAll(".pc-console");
 
-let game_mobile = document.getElementById("game-mobile");
+let game_mobile = document.querySelectorAll(".game-mobile");
 
-game_online.addEventListener("click", (e) => {
-  e.preventDefault();
-  let typeArr = games.filter((obj) => obj.type == "Game Online");
-  let posts = typeArr.map((obj) => {
-    let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
-    let rating =
-      ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
-      ratingFeedback.length;
-    return `<article class="rating__post-item">
+game_online.forEach((obj) =>
+  obj.addEventListener("click", (e) => {
+    e.preventDefault();
+    let typeArr = games.filter((obj) => obj.type == "Game Online");
+    let posts = typeArr.map((obj) => {
+      let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
+      let rating =
+        ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
+        ratingFeedback.length;
+      return `<article class="rating__post-item">
    <div class="inner">
      <div class="post-review">
        <div class="post-review__thumb">
@@ -47,19 +48,21 @@ game_online.addEventListener("click", (e) => {
      <hr />
    </div>
  </article>`;
-  });
-  listPosts.innerHTML = posts.join("");
-});
+    });
+    listPosts.innerHTML = posts.join("");
+  })
+);
 
-pc_console.addEventListener("click", (e) => {
-  e.preventDefault();
-  let typeArr = games.filter((obj) => obj.type == "PC/Console");
-  let posts = typeArr.map((obj) => {
-    let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
-    let rating =
-      ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
-      ratingFeedback.length;
-    return `<article class="rating__post-item">
+pc_console.forEach((obj) =>
+  obj.addEventListener("click", (e) => {
+    e.preventDefault();
+    let typeArr = games.filter((obj) => obj.type == "PC/Console");
+    let posts = typeArr.map((obj) => {
+      let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
+      let rating =
+        ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
+        ratingFeedback.length;
+      return `<article class="rating__post-item">
    <div class="inner">
      <div class="post-review">
        <div class="post-review__thumb">
@@ -94,19 +97,21 @@ pc_console.addEventListener("click", (e) => {
      <hr />
    </div>
  </article>`;
-  });
-  listPosts.innerHTML = posts.join("");
-});
+    });
+    listPosts.innerHTML = posts.join("");
+  })
+);
 
-game_mobile.addEventListener("click", (e) => {
-  e.preventDefault();
-  let typeArr = games.filter((obj) => obj.type == "Game Mobile");
-  let posts = typeArr.map((obj) => {
-    let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
-    let rating =
-      ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
-      ratingFeedback.length;
-    return `<article class="rating__post-item">
+game_mobile.forEach((obj) =>
+  obj.addEventListener("click", (e) => {
+    e.preventDefault();
+    let typeArr = games.filter((obj) => obj.type == "Game Mobile");
+    let posts = typeArr.map((obj) => {
+      let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
+      let rating =
+        ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
+        ratingFeedback.length;
+      return `<article class="rating__post-item">
    <div class="inner">
      <div class="post-review">
        <div class="post-review__thumb">
@@ -141,6 +146,7 @@ game_mobile.addEventListener("click", (e) => {
      <hr />
    </div>
  </article>`;
-  });
-  listPosts.innerHTML = posts.join("");
-});
+    });
+    listPosts.innerHTML = posts.join("");
+  })
+);

@@ -1,23 +1,28 @@
-const listPosts = document.querySelector("section");
+let formSearch = document.querySelector(".searching");
+let searching = document.querySelector('input[type = "search"]');
 
-renderMainPage(games);
-function renderMainPage(arr) {
-  let posts = arr.map((obj) => {
-    let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
-    let rating =
-      ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
-      ratingFeedback.length;
-    return `<article class="rating__post-item">
-   <div class="inner">
-     <div class="post-review">
-       <a class="post-review__thumb" href ="${obj.link}">
+formSearch.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let posts = games
+    .filter((obj) => {
+      return obj.name.includes(searching.value);
+    })
+    .map((obj) => {
+      let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
+      let rating =
+        ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
+        ratingFeedback.length;
+      return `<article class="rating__post-item">
+    <div class="inner">
+        <div class="post-review">
+       <div class="post-review__thumb">
          <img
            width="286"
            height="160"
            src="${obj.image}"
            alt="game_1"
          />
-       </a>
+       </div>
        <div class="post-review__content">
          <h2 class="post-review__content-title">
            <a href="${obj.link}" target = "_self" class="post-review__content-link">
@@ -42,6 +47,6 @@ function renderMainPage(arr) {
      <hr />
    </div>
  </article>`;
-  });
+    });
   listPosts.innerHTML = posts.join("");
-}
+});

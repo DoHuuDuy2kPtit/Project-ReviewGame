@@ -60,6 +60,14 @@ log_in.addEventListener("click", (e) => {
             unaccount.appendChild(accountName);
             unaccount.appendChild(accountLogo);
             unaccount.appendChild(accountLogout);
+            accountLogout.addEventListener("click", (e) => {
+              e.preventDefault();
+              unaccount.removeChild(accountName);
+              unaccount.removeChild(accountLogo);
+              unaccount.removeChild(accountLogout);
+              unaccount.appendChild(register);
+              unaccount.appendChild(log_in);
+            });
           }
         }
         if (status == 0) {
@@ -81,17 +89,14 @@ register.addEventListener("click", (e) => {
   <div class="form-group">
     <label for="email-register">Email</label>
     <input type="email" class="form-control" id="email-register" aria-describedby="emailHelp">
-    <small>Email phải đúng theo định dạng của email</small>
   </div>
   <div class="form-group">
     <label for="username-register">Username</label>
     <input type="text" class="form-control" id="username-register" aria-describedby="emailHelp">
-    <small>Hãy nghĩ 1 cái username thật hay nhé :), chú ý rằng chiều dài tối thiểu là 6 và tối đa là 32 kí tự</small>
   </div>
   <div class="form-group">
     <label for="password-register">Mật khẩu</label>
     <input type="password" class="form-control" id="password-register">
-    <small>Mật khẩu phải có chiều dài tối thiểu là 6 và tối đa là 32 kí tự</small>
   </div>
   <div class="form-group">
     <label for="confirm-password-register">Xác nhận mật khẩu</label>
