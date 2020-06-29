@@ -1,5 +1,5 @@
 let log_in = document.querySelector(".top-navbar__account-log-in");
-console.log(log_in);
+
 let register = document.querySelector(".top-navbar__account-register");
 
 let unaccount = document.querySelector(".top-navbar__account");

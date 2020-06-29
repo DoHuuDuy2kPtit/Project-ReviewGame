@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ff5200;
+  --primary-color: #01a9b4;
   --line-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -43,6 +43,10 @@ a:hover {
   color: #fff;
   padding: 4px;
   margin-right: 4px;
+}
+
+label {
+  margin-bottom: 0px;
 }
 
 /*Animation*/

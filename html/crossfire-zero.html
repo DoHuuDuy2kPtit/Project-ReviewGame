@@ -25,6 +25,7 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/responsive.css">
   </head>
   <script src="./format-letter.js"></script>
   <body>
@@ -32,7 +33,7 @@
     <header>
       <div class="container">
         <div class="top-nav">
-          <a class="top-navbar-brand" href="#"> </a>
+          <a class="top-navbar-brand" href="../html/index.html"> </a>
           <div class="top-navbar__account">
             <a href="#" class="top-navbar__account-register">Đăng kí</a>
             <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
@@ -58,13 +59,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">GAME ONLINE</a>
+                <a class="nav-link" href="../html/game-online.html">GAME ONLINE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PC/CONSOLE</a>
+                <a class="nav-link" href="../html/pc-console.html">PC/CONSOLE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">GAME MOBILE</a>
+                <a class="nav-link" href="../html/game-mobile.html">GAME MOBILE</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -83,8 +84,76 @@
               </button>
             </form>
           </div>
+          <label class="nav-categories" for="nav__icon-check"
+            ><i class="fas fa-bars"></i
+          ></label>
         </div>
       </nav>
+            <input
+        type="checkbox"
+        name=""
+        class="nav__icon-check-input"
+        id="nav__icon-check"
+      />
+      <label for="nav__icon-check" class="categories-overlay">
+        <div class="nav__mobile">
+          <label for="nav__icon-check" class="nav__mobile-close">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="times"
+              class="svg-inline--fa fa-times fa-w-11"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+            >
+              <path
+                fill="currentColor"
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </label>
+          <form class="form-inline my-2 my-lg-0 searching">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Tìm kiếm game ..."
+              hidefocus="true"
+              style="outline: none;"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mobile">
+              <a
+                class="nav-link game-online"
+                href="../html/game-online.html"
+                id="game-online"
+                >GAME ONLINE</a
+              >
+            </li>
+            <li class="nav-item mobile">
+              <a
+                class="nav-link pc-console"
+                href="../html/pc-console.html"
+                id="pc-console"
+                >PC/CONSOLE</a
+              >
+            </li>
+            <li class="nav-item mobile">
+              <a
+                class="nav-link game-mobile"
+                href="../html/game-mobile.html"
+                id="game-mobile"
+                >GAME MOBILE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </label>
       <div style="background-color: black; width: 100%; height: 40px;">
       </div>
       <!-- </div> -->
@@ -94,7 +163,7 @@
       <div class="container">
         <img class="top-banner__image" src="https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/crossfire-zero-header.jpg"></img>
         <div class="top-banner__review">
-          <a href class="top-banner__review-type">Game online</a>
+          <a href = "../html/game-online.html" class="top-banner__review-type">Game online</a>
           <div class="big-title">
             <h1 class="font-weight-bold">
               Đánh giá CrossfireZero - Một diện mạo mới của Đột Kích
@@ -386,7 +455,7 @@
         <div class="row">
           <div class="col-sm-2">
             <div class="logo-wrap">
-              <a href="#" class="footer__logo">
+              <a href="../html/index.html" class="footer__logo">
                 <img
                   width="150"
                   height="150"
@@ -400,55 +469,50 @@
             <div class="footer-menu">
               <ul class="footer-menu__list">
                 <li class="footer-menu__item">
-                  <a href="#">
+                  <a href="../html/game-online.html">
                     GAME ONLINE
                   </a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="#">
+                  <a href="../html/pc-console.html">
                     PC/CONSOLE
                   </a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="#">
+                  <a href="../html/game-mobile.html">
                     GAME MOBILE
                   </a>
                 </li>
               </ul>
               <ul class="footer-menu__list policy">
                 <li class="footer-menu__item">
-                  <a href="#">
+                  <a href="../html/introduce.html">
                     Giới thiệu
                   </a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="#">
+                  <a href="../html/policy.html">
                     Chính sách bảo mật
                   </a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="#">
+                  <a href="../html/using.html">
                     Điều khoản sử dụng
-                  </a>
-                </li>
-                <li class="footer-menu__item">
-                  <a href="#">
-                    Liên hệ
                   </a>
                 </li>
               </ul>
             </div>
             <div class="menu__social">
-              <a href="#">
+              <a href="https://www.facebook.com/phegame/"target="_blank">
                 <i class="fab fa-facebook-square"></i>
               </a>
-              <a href="#">
+              <a href="https://twitter.com/motgamevn"target="_blank">
                 <i class="fab fa-twitter-square"></i>
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/channel/UCTF0ldaORTbCfx2ahvFfYWg/featured"target="_blank">
                 <i class="fab fa-youtube-square"></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/motgamevn/"target="_blank">
                 <i class="fab fa-instagram-square"></i>
               </a>
             </div>
