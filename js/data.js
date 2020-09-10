@@ -14,7 +14,7 @@ class Game {
     this.type = type;
     this.image = image;
     this.introduce = introduce;
-    this.date = new Date();
+    this.date = new Date().toDateString();
     this.feedback = [];
     this.link = link;
   }
@@ -25,51 +25,47 @@ class Comment {
     this.author = author;
     this.comment = comment;
     this.rate = rate;
-    this.date = new Date();
+    this.date = new Date().toDateString();
   }
 }
 
 const type = ["Game Online", "PC/Console", "Game Mobile"];
 
-const gordianQuest = new Game(
-  "Gordian Quest",
-  "Đánh giá Gordian Quest: Cứu thế giới bằng một lần chơi chẵn/lẻ",
-  type[1],
-  "../images/gordian-quest.jpg",
-  "Với lối chơi nhập vai truyền thống kết hợp với thẻ bài, Gordian Quest được đánh giá sẽ đem lại trải nghiệm mới khác biệt với các game RPG trước đây.",
-  "../html/gordian-quest.html"
-);
+// const gordianQuest = new Game(
+//   "Gordian Quest",
+//   "Đánh giá Gordian Quest: Cứu thế giới bằng một lần chơi chẵn/lẻ",
+//   type[1],
+//   "../images/gordian-quest.jpg",
+//   "Với lối chơi nhập vai truyền thống kết hợp với thẻ bài, Gordian Quest được đánh giá sẽ đem lại trải nghiệm mới khác biệt với các game RPG trước đây.",
+//   "../html/gordian-quest.html"
+// );
 
-const lol = new Game(
-  "League Of Legend: Tốc Chiến",
-  "Đánh giá LMHT: Tốc Chiến Alpha Test – Tiêu chuẩn mới cho MOBA trên di động",
-  type[2],
-  "../images/lol.jpg",
-  "Dù mới là giai đoạn thử nghiệm giới hạn, có thể khẳng định Tốc Chiến sẽ mở ra những tiềm năng vô hạn cho thị trường MOBA trên di động.",
-  "../html/lol.html"
-);
+// const lol = new Game(
+//   "League Of Legend: Tốc Chiến",
+//   "Đánh giá LMHT: Tốc Chiến Alpha Test – Tiêu chuẩn mới cho MOBA trên di động",
+//   type[2],
+//   "../images/lol.jpg",
+//   "Dù mới là giai đoạn thử nghiệm giới hạn, có thể khẳng định Tốc Chiến sẽ mở ra những tiềm năng vô hạn cho thị trường MOBA trên di động.",
+//   "../html/lol.html"
+// );
 
-const valorant = new Game(
-  "Valorant",
-  "Đánh giá Valorant – Cái game này chưa cho Overwatch xuống mộ được đâu!",
-  type[0],
-  "../images/valorant.jpg",
-  "Bất chấp việc có rất nhiều player đang tháo chạy qua Valorant, thì tôi vẫn đánh giá tựa game này chưa thể vươn mình lên thành siêu phẩm được đâu.",
-  "../html/valorant.html"
-);
+// const valorant = new Game(
+//   "Valorant",
+//   "Đánh giá Valorant – Cái game này chưa cho Overwatch xuống mộ được đâu!",
+//   type[0],
+//   "../images/valorant.jpg",
+//   "Bất chấp việc có rất nhiều player đang tháo chạy qua Valorant, thì tôi vẫn đánh giá tựa game này chưa thể vươn mình lên thành siêu phẩm được đâu.",
+//   "../html/valorant.html"
+// );
 
-const crossFireZero = new Game(
-  "Crossfire Zero",
-  "Đánh giá Crossfire Zero – Một diện mạo mới của Đột Kích",
-  type[0],
-  "../images/crossfire-zero.jpg",
-  "Crossfire Zero sẽ khiến những người theo Đột Kích từ những ngày đầu như Mọt cảm thấy thật thân quen như thời mới bước vào Beta của Đột Kích 12 năm trước.",
-  "../html/crossfire-zero.html"
-);
+// const crossFireZero = new Game(
+//   "Crossfire Zero",
+//   "Đánh giá Crossfire Zero – Một diện mạo mới của Đột Kích",
+//   type[0],
+//   "../images/crossfire-zero.jpg",
+//   "Crossfire Zero sẽ khiến những người theo Đột Kích từ những ngày đầu như Mọt cảm thấy thật thân quen như thời mới bước vào Beta của Đột Kích 12 năm trước.",
+//   "../html/crossfire-zero.html"
+// );
 
-const bezt = new Comment("chung", "da bezt", 0);
-crossFireZero.feedback.push(bezt);
-
-const games = [gordianQuest, lol, valorant, crossFireZero];
-
-const user = [];
+// const bezt = new Comment("chung", "da bezt", 0);
+// crossFireZero.feedback.push(bezt);

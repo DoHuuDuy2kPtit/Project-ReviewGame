@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Review Game</title>
     <script
       src="https://kit.fontawesome.com/1d8617e925.js"
       crossorigin="anonymous"
@@ -26,17 +26,26 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"
+    ></script>
   </head>
   <body>
     <!-- Nav-bar -->
     <header>
       <div class="container">
         <div class="top-nav">
-          <a
-            class="top-navbar-brand"
-            href="../html/index.html"
-            target="_self"
-          ></a>
+          <a class="top-navbar-brand" href="../index.html" target="_self"></a>
           <div class="top-navbar__account">
             <a href="#" class="top-navbar__account-register">Đăng kí</a>
             <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
@@ -402,7 +411,7 @@
         <div class="row">
           <div class="col-sm-2">
             <div class="logo-wrap">
-              <a href="../html/index.html" class="footer__logo">
+              <a href="../index.html" class="footer__logo">
                 <img
                   src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png"
                   alt="ft-logo"
@@ -469,7 +478,7 @@
       </div>
     </footer>
     <script src="../js/data.js"></script>
-    <script src="../js/render-main-page.js"></script>
+    <!-- <script src="../js/render-main-page.js"></script> -->
     <script src="../js/pc-console.js"></script>
     <!-- <script src="../js/render-filter-type.js"></script> -->
     <script src="../js/render-searching.js"></script>

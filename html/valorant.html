@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Valorant</title>
     <script
       src="https://kit.fontawesome.com/1d8617e925.js"
       crossorigin="anonymous"
@@ -26,6 +26,19 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.5/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"
+    ></script>
   </head>
   <script src="./format-letter.js"></script>
   <body>
@@ -33,7 +46,7 @@
     <header>
       <div class="container">
         <div class="top-nav">
-          <a class="top-navbar-brand" href="../html/index.html"> </a>
+          <a class="top-navbar-brand" href="../index.html"> </a>
           <div class="top-navbar__account">
             <a href="#" class="top-navbar__account-register">Đăng kí</a>
             <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
@@ -408,28 +421,29 @@
             <h3 class="comments-title">Bình luận</h3>
             <hr />
             <form class="comment-respond">
-              <label for="exampleFormControlTextarea1"></label>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Bình luận"
-              ></textarea>
-              <div class="slidecontainer">
-                <p>Hãy để lại đánh giá của bạn về tựa game này</p>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="0"
-                  class="slider"
-                  id="myRange"
-                />
-                <p>Điểm: <span id="demo"></span></p>
-              </div>
-              <button type="submit" class="btn btn-primary btn-comment">
-                Đăng tải
-              </button>
+            <label for="exampleFormControlTextarea1"></label>
+            <input
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Bình luận"
+              type="text"
+            ></input>
+            <div class="slidecontainer">
+              <p>Hãy để lại đánh giá của bạn về tựa game này</p>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                class="slider"
+                id="myRange"
+              />
+              <p>Điểm: <span id="demo"></span></p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-comment">
+              Đăng tải
+            </button>
             </form>
           </div>
         </div>
@@ -468,7 +482,7 @@
         <div class="row">
           <div class="col-sm-2">
             <div class="logo-wrap">
-              <a href="../html/index.html" class="footer__logo">
+              <a href="../index.html" class="footer__logo">
                 <img
                   width="150"
                   height="150"
@@ -539,7 +553,7 @@
     </footer>
     <script src="../js/data.js"></script>
     <script src="../js/vote.js"></script>
-    <script src="../js/render-main-page.js"></script>
+    <!-- <script src="../js/render-main-page.js"></script> -->
     <script src="../js/login-and-register.js"></script>
     <script src="../js/render-comment.js"></script>
     <script

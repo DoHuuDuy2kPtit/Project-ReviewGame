@@ -6,13 +6,17 @@ formSearch.forEach((obj, index) =>
     e.preventDefault();
     let posts = games
       .filter((obj) => {
-        return obj.name.includes(searching[index].value);
+        return obj.name
+          .toLowerCase()
+          .includes(searching[index].value.toLowerCase());
       })
       .map((obj) => {
         let ratingFeedback = obj.feedback.filter((obj) => obj.rate > 0);
-        let rating =
-          ratingFeedback.reduce((a, b) => a.rate + b.rate, 0) /
-          ratingFeedback.length;
+        let ratingPoint = 0;
+        for (let i = 0; i < ratingFeedback.length; i++) {
+          ratingPoint += ratingFeedback[i].rate;
+        }
+        let rating = ratingPoint / ratingFeedback.length;
         return `<article class="rating__post-item">
     <div class="inner">
         <div class="post-review">
@@ -26,7 +30,9 @@ formSearch.forEach((obj, index) =>
        </div>
        <div class="post-review__content">
          <h2 class="post-review__content-title">
-           <a href="${obj.link}" target = "_self" class="post-review__content-link">
+           <a href="${
+             obj.link
+           }" target = "_self" class="post-review__content-link">
              ${obj.title}
            </a>
          </h2>
@@ -42,7 +48,7 @@ formSearch.forEach((obj, index) =>
          </div>
        </div>
        <div class="post-review__rating-scores">
-         <div class="rating-scores p73">${rating}</div>
+         <div class="rating-scores p73">${rating.toFixed(1)}</div>
        </div>
      </div>
      <hr />

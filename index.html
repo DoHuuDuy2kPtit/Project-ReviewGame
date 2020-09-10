@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Review Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome to Review Game</title>
     <script
       src="https://kit.fontawesome.com/1d8617e925.js"
       crossorigin="anonymous"
@@ -23,9 +23,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.15.5/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -39,13 +39,36 @@
       defer
       src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"
     ></script>
+
+    <script
+      src="https://kit.fontawesome.com/1d8617e925.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <!-- Nav-bar -->
     <header>
       <div class="container">
         <div class="top-nav">
-          <a class="top-navbar-brand" href="../index.html" target="_self"></a>
+          <a class="top-navbar-brand" href="./index.html" target="_self"></a>
           <div class="top-navbar__account">
             <a href="#" class="top-navbar__account-register">Đăng kí</a>
             <a href="#" class="top-navbar__account-log-in">Đăng nhập</a>
@@ -75,7 +98,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link game-online"
-                  href="../html/game-online.html"
+                  href="./html/game-online.html"
                   id="game-online"
                   >GAME ONLINE</a
                 >
@@ -83,7 +106,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link pc-console"
-                  href="../html/pc-console.html"
+                  href="./html/pc-console.html"
                   id="pc-console"
                   >PC/CONSOLE</a
                 >
@@ -91,7 +114,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link game-mobile"
-                  href="../html/game-mobile.html"
+                  href="./html/game-mobile.html"
                   id="game-mobile"
                   >GAME MOBILE</a
                 >
@@ -118,7 +141,6 @@
           ></label>
         </div>
       </nav>
-      <div class="container"></div>
       <input
         type="checkbox"
         name=""
@@ -160,7 +182,7 @@
             <li class="nav-item mobile">
               <a
                 class="nav-link game-online"
-                href="../html/game-online.html"
+                href="./html/game-online.html"
                 id="game-online"
                 >GAME ONLINE</a
               >
@@ -168,7 +190,7 @@
             <li class="nav-item mobile">
               <a
                 class="nav-link pc-console"
-                href="../html/pc-console.html"
+                href="./html/pc-console.html"
                 id="pc-console"
                 >PC/CONSOLE</a
               >
@@ -176,7 +198,7 @@
             <li class="nav-item mobile">
               <a
                 class="nav-link game-mobile"
-                href="../html/game-mobile.html"
+                href="./html/game-mobile.html"
                 id="game-mobile"
                 >GAME MOBILE</a
               >
@@ -198,7 +220,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="../images/gordian-quest.jpg"
+                src="./images/gordian-quest.jpg"
                 class="d-block w-100"
                 alt="..."
                 width="100%"
@@ -207,7 +229,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../images/lol.jpg"
+                src="./images/lol.jpg"
                 class="d-block w-100"
                 alt="..."
                 width="100%"
@@ -216,7 +238,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../images/valorant.jpg"
+                src="./images/valorant.jpg"
                 class="d-block w-100"
                 alt="..."
                 width="100%"
@@ -258,120 +280,7 @@
               </h1>
               <hr />
             </div>
-            <section class="rating__list-posts">
-              <!-- <article class="rating__post-item">
-                            <div class="inner">
-                                <div class="post-review">
-                                    <div class="post-review__thumb">
-                                        <img width= "286" height= "160" src="https://motgame.vn/wp-content/uploads/2020/06/vuhoang/gordian-quest1-368x207.jpg" alt="game_1">
-                                    </div>
-                                    <div class="post-review__content">
-                                        <h2 class="post-review__content-title">
-                                            <a href="#" class="post-review__content-link">Đánh giá Gordian Quest: Cứu thế giới bằng một lần chơi chẵn/lẻ</a>
-                                        </h2>
-                                        <div class="post-review__content-meta">
-                                            <a href="#" class="meta-type">PC/Console</a>
-                                            <span class="meta-date">14/06/2020 12:00</span>
-                                        </div>
-
-                                        <div class="post-review__content-entry">
-                                            Với lối chơi nhập vai truyền thống kết hợp với thẻ bài, Gordian Quest được đánh giá sẽ đem lại trải nghiệm mới khác biệt với các game RPG trước đây.
-                                        </div>
-                                    </div>
-                                    <div class="post-review__rating-scores">
-                                        <div class="rating-scores p73">
-                                            7.3
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                        </article>
-                        <article class="rating__post-item">
-                            <div class="inner">
-                                <div class="post-review">
-                                    <div class="post-review__thumb">
-                                        <img width= "286" height= "160" src="https://wildrift.leagueoflegends.com/vi-vn/static/open-graph-vi-d8bd25bb164dbe629bc2b7195e183bd9.jpg" alt="game_2">
-                                    </div>
-                                    <div class="post-review__content">
-                                        <h2 class="post-review__content-title">
-                                            <a href="#" class="post-review__content-link">Đánh giá LMHT: Tốc Chiến Alpha Test – Tiêu chuẩn mới cho MOBA trên di động</a>
-                                        </h2>
-                                        <div class="post-review__content-meta">
-                                            <a href="#" class="meta-type">Game Mobile</a>
-                                            <span class="meta-date">09/06/2020 09:00</span>
-                                        </div>
-
-                                        <div class="post-review__content-entry">
-                                            Dù mới là giai đoạn thử nghiệm giới hạn, có thể khẳng định Tốc Chiến sẽ mở ra những tiềm năng vô hạn cho thị trường MOBA trên di động.
-                                        </div>
-                                    </div>
-                                    <div class="post-review__rating-scores">
-                                        <div class="rating-scores p85">
-                                            8.5
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                        </article>
-                        <article class="rating__post-item">
-                            <div class="inner">
-                                <div class="post-review">
-                                    <div class="post-review__thumb">
-                                        <img width= "286" height= "160" src="https://st.gamevui.com/images/image/2020/06/04/valorant-sea-hd01.jpg" alt="game_1">
-                                    </div>
-                                    <div class="post-review__content">
-                                        <h2 class="post-review__content-title">
-                                            <a href="#" class="post-review__content-link">Đánh giá Valorant – Cái game này chưa cho Overwatch xuống mộ được đâu!</a>
-                                        </h2>
-                                        <div class="post-review__content-meta">
-                                            <a href="#" class="meta-type">Game Online</a>
-                                            <span class="meta-date">06/06/2020 11:00</span>
-                                        </div>
-
-                                        <div class="post-review__content-entry">
-                                            Bất chấp việc có rất nhiều player đang tháo chạy qua Valorant, thì tôi vẫn đánh giá tựa game này chưa thể vươn mình lên thành siêu phẩm được đâu.
-                                        </div>
-                                    </div>
-                                    <div class="post-review__rating-scores">
-                                        <div class="rating-scores p78">
-                                            7.8
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                        </article>
-                        <article class="rating__post-item">
-                            <div class="inner">
-                                <div class="post-review">
-                                    <div class="post-review__thumb">
-                                        <img width= "286" height= "160" src="https://motgame.vn/wp-content/uploads/2020/06/monster_vnsf/crossfire-zero-ava-368x207.jpg" alt="game_1">
-                                    </div>
-                                    <div class="post-review__content">
-                                        <h2 class="post-review__content-title">
-                                            <a href="#" class="post-review__content-link">Đánh giá Crossfire Zero – Một diện mạo mới của Đột Kích</a>
-                                        </h2>
-                                        <div class="post-review__content-meta">
-                                            <a href="#" class="meta-type">Game Online</a>
-                                            <span class="meta-date">05/06/2020 11:00</span>
-                                        </div>
-
-                                        <div class="post-review__content-entry">
-                                            Crossfire Zero sẽ khiến những người theo Đột Kích từ những ngày đầu như Mọt cảm thấy thật thân quen như thời mới bước vào Beta của Đột Kích 12 năm trước.
-                                        </div>
-                                    </div>
-                                    <div class="post-review__rating-scores">
-                                        <div class="rating-scores p81">
-                                            8.1
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                        </article> -->
-            </section>
+            <section class="rating__list-posts"></section>
           </div>
         </div>
         <div class="col-sm-0 col-lg-4 col-xl-4">
@@ -411,7 +320,7 @@
         <div class="row">
           <div class="col-sm-2">
             <div class="logo-wrap">
-              <a href="../index.html" class="footer__logo">
+              <a href="index.html" class="footer__logo">
                 <img
                   src="https://raw.githubusercontent.com/DoHuuDuy2kPtit/Project-Demo-Git/master/logo.png"
                   alt="ft-logo"
@@ -423,34 +332,34 @@
             <div class="footer-menu">
               <ul class="footer-menu__list">
                 <li class="footer-menu__item game-online">
-                  <a href="../html/game-online.html">
+                  <a href="./html/game-online.html">
                     GAME ONLINE
                   </a>
                 </li>
                 <li class="footer-menu__item pc-console">
-                  <a href="../html/pc-console.html">
+                  <a href="./html/pc-console.html">
                     PC/CONSOLE
                   </a>
                 </li>
                 <li class="footer-menu__item game-mobile">
-                  <a href="../html/game-mobile.html">
+                  <a href="./html/game-mobile.html">
                     GAME MOBILE
                   </a>
                 </li>
               </ul>
               <ul class="footer-menu__list policy">
                 <li class="footer-menu__item">
-                  <a href="../html/introduce.html" target="_self">
+                  <a href="./html/introduce.html" target="_self">
                     Giới thiệu
                   </a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="../html/policy.html" target="_self">
+                  <a href="./html/policy.html" target="_self">
                     Chính sách bảo mật
                   </a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="../html/using.html" target="_self">
+                  <a href="./html/using.html" target="_self">
                     Điều khoản sử dụng
                   </a>
                 </li>
@@ -477,12 +386,11 @@
         </div>
       </div>
     </footer>
-    <script src="../js/data.js"></script>
-    <!-- <script src="../js/render-main-page.js"></script> -->
-    <script src="../js/game-online.js"></script>
-    <!-- <script src="../js/render-filter-type.js"></script> -->
-    <script src="../js/render-searching.js"></script>
-    <script src="../js/login-and-register.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/render-main-page.js"></script>
+    <!-- <script src="./js/render-filter-type.js"></script> -->
+    <script src="./js/render-searching.js"></script>
+    <script src="./js/login-and-register.js"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
